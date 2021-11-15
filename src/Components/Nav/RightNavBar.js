@@ -37,7 +37,6 @@ const Ul = styled.ul`
         right: 0;
         height: 100vh;
         width: 100vw;
-        padding-top: 3.5rem;
         transition: transform 0.5s ease-in-out;
 
         NavLink {
@@ -56,11 +55,12 @@ function RightNavbar({open}) {
                 <span>Home </span>
             </NavLink>
            
-            
+    
             <NavLink
             to={'/blog'} onClick={<Burger open={!open}/>}  style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                <span> Blog </span>
             </NavLink>
+
             <NavLink
             to={'/community'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                <span> Community Projects </span>

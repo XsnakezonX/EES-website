@@ -4,15 +4,14 @@ import { NavLink, Link } from "react-router-dom";
 import Burger from "./Burger";
 
 const Nav = styled.nav`
-    width: 100%;
     height: 10%;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
  
 
-    .logo {
-        padding: 15px 0;
+    a {
+        color: #485466;
+        text-decoration: none;
     }
 
     ul {
