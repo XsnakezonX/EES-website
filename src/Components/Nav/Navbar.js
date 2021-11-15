@@ -1,13 +1,40 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink, Link } from "react-router-dom";
+import Burger from "./Burger";
 
-const N
+const Nav = styled.nav`
+    width: 100%;
+    height: 10%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+ 
+
+    .logo {
+        padding: 15px 0;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        
+        li {
+            padding: 18px 10px;
+        }
+    }
+    `
 
 function Navbar() {
     return (
         <>
-           <h1>Menu</h1>
+           <Nav>
+              <NavLink  to="/">
+                <h1>Logo</h1>
+            </NavLink>
+          <Burger />
+        </Nav>
         </>
     );
 }
