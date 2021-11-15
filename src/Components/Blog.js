@@ -14,12 +14,8 @@ justify-content: center;
 function Blog() {
     return (
         <>
-           <h1>Blog Page</h1>
-
-           <ArticleContainer>
-            <h1>Articles</h1>
-            </ArticleContainer>
-
+           <h1>Blog</h1>
+           <p>Sub</p>
         </>
     );
 }
