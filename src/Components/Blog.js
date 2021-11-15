@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ArticleContainer = styled.section`
-background-color: #d1d1d1;
+background-color: #9357b5;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -14,8 +14,12 @@ justify-content: center;
 function Blog() {
     return (
         <>
-           <h1>Blog</h1>
+           <h1>Blog page</h1>
            <p>Sub</p>
+
+           <ArticleContainer>
+            <h1>Articles</h1>
+            </ArticleContainer>
         </>
     );
 }

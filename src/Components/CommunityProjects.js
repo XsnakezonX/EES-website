@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const CommunityContainer = styled.section`
-background-color: #d1d1d1;
+background-color: #25318a;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -12,7 +12,7 @@ justify-content: center;
 `;
 
 const ProjectsContainer = styled.section`
-background-color: #d1d1d1;
+background-color: #5e69bd;
 height: 100vh;
 background-size: cover;
 display: flex !important;
