@@ -11,17 +11,12 @@ align-items: center;
 justify-content: center;
 `;
 
-function Blog() {
+function CommunityProjects() {
     return (
         <>
-           <h1>Blog Page</h1>
-
-           <ArticleContainer>
-            <h1>Articles</h1>
-            </ArticleContainer>
-
+           <h1>Community Projects</h1>
         </>
     );
 }
 
-export default Blog;
+export default CommunityProjects;
