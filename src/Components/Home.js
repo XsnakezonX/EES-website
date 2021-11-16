@@ -75,6 +75,23 @@ function Home() {
 
             <SponsorContainer> 
             <h1>Sponsors</h1>
+
+            <a href="https://home.kpmg/uk/en/home.html" target="_blank">KPMG</a>
+            <a href="https://about.google/" target="_blank">Google</a>
+            <a href="https://about.google/" target="_blank">GitHub</a>
+            <a href="https://www.mozilla.org/en-US/" target="_blank">Mozilla</a>
+            <a href="https://business-school.exeter.ac.uk/" target="_blank">Exeter Business</a>
+            <a href="https://www.marshmclennan.com/" target="_blank">Marsh and McLennan Companies </a>
+            <a href="https://www.ashurst.com/" target="_blank">Ashurt</a>
+            <a href="https://www.oaknorth.co.uk/" target="_blank">Oaknorth Bank</a>
+            <a href="https://www.db.com/" target="_blank">Deutsche Bank</a>
+            <a href="https://aws.amazon.com/" target="_blank">Amazon AWS</a>
+            <a href="" target="_blank"></a>
+            <a href="" target="_blank"></a>
+            <a href="" target="_blank"></a>
+            <a href="" target="_blank"></a>
+
+
             </SponsorContainer>
 
             <SocialsContainer>
