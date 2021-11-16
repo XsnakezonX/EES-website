@@ -14,7 +14,7 @@ justify-content: center;
 
 const VideoContainer = styled.section`
 background-color: #a2a2ab;
-height: 100vh;
+height: 150vh;
 background-size: cover;
 display: flex !important;
 flex-direction: column;
@@ -63,6 +63,10 @@ function Home() {
 
             <VideoContainer>
             <h1>Video</h1>
+            <video  autoPlay muted loop >
+                <source src="CoverVideo.mp4" />
+                This Browser does not support the video tag
+                </video>
             </VideoContainer>
 
             <MapContainer>
