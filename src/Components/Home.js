@@ -4,6 +4,7 @@ import Navbar from "./Nav/Navbar";
 import RightNavbar from "./Nav/RightNavBar";
 
 
+
 const LandingContainer = styled.section`
 background-color: #00364D;
 height: 100vh;
@@ -26,7 +27,7 @@ justify-content: center;
 `;
 
 const CallToActionContainer = styled.section`
-background-color: #5e69bd;
+background-color: #00364D;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -36,7 +37,7 @@ justify-content: center;
 `;
 
 const ProjectsContainer = styled.section`
-background-color: #5e69bd;
+background-color: #00364D;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -65,10 +66,22 @@ align-items: center;
 justify-content: center;
 `;
 
-const LandingTitle = styled.h1`
+
+const LandingTitle = styled.section`
 color: white;
-font-weight
+font-weight: 700;
+font-size: 72px;
+line-height: 86px;
 `;
+
+const SectionTitle = styled.section`
+color: white;
+font-weight: 700;
+font-size: 72px;
+line-height: 86px;
+`;
+
+
 
 
 
@@ -80,8 +93,10 @@ function Home() {
             
             <LandingContainer>
 
-                <h1>Totally Free</h1>
-                <h1>Always Innovating.</h1>
+                 <LandingTitle>
+                    <h1>Totally Free</h1>
+                    <h1>Always Innovating.</h1>
+                </LandingTitle>
 
             </LandingContainer>
 
@@ -99,20 +114,26 @@ function Home() {
 
             <ProjectsContainer>
 
-                <h1>We Are Exeter Entrepreneurs</h1>
+                <SectionTitle>
+                    <h1>We Are Exeter Entrepreneurs</h1>
+                </SectionTitle>
 
             </ProjectsContainer>
 
             <ProjectsContainer>
 
-                <h1>Our Community Projects</h1>
+                <SectionTitle>
+                    <h1>Our Community Projects</h1>
+                </SectionTitle>
 
             </ProjectsContainer>
            
 
             <SponsorContainer> 
 
-                <h1>Sponsors</h1>
+                <SectionTitle>
+                    <h1>Meet our Sponsors</h1>
+                </SectionTitle>
                 
                 {/* clickable image Hyperlinks to sponsors websites */}
 
@@ -138,7 +159,9 @@ function Home() {
 
             <MapContainer>
 
-                <h1>Map</h1>
+                <SectionTitle>
+                    <h1>Map</h1>
+                </SectionTitle>
 
             </MapContainer>
             
