@@ -67,21 +67,34 @@ justify-content: center;
 `;
 
 
-const LandingTitle = styled.section`
+const LandingTitle = styled.h1`
 color: white;
 font-weight: 700;
 font-size: 72px;
 line-height: 86px;
 `;
 
-const SectionTitle = styled.section`
+const SectionTitle = styled.h1`
 color: white;
 font-weight: 700;
 font-size: 72px;
 line-height: 86px;
 `;
 
-const SponsorIcons = styled.section`
+const SectionTitle = styled.h1`
+color: white;
+font-weight: 700;
+font-size: 72px;
+line-height: 86px;
+`;
+
+const SectionText = styled.p`
+color: white;
+font-size: 20px;
+line-height: 86px;
+`;
+
+const SponsorIcons = styled.div`
 
 img {
     filter: brightness(65%);
@@ -127,8 +140,14 @@ function Home() {
 
                 <SectionTitle>
                     <h1>We Are Exeter Entrepreneurs</h1>
-                    <button>Join our community</button>
                 </SectionTitle>
+
+                <SectionText>
+                    <p>Join the largest society on campus now, free.</p>
+                </SectionText>
+
+                    <button>Join our community</button>
+                
 
             </ProjectsContainer>
 
@@ -137,6 +156,11 @@ function Home() {
                 <SectionTitle>
                     <h1>Our Community Projects</h1>
                 </SectionTitle>
+
+                <SectionText>
+                    <p>Exeter Entrepreneurs are proud to have an exciting, diverse range of events running throughout the</p>   
+                    <p>year. Be sure to check out what’s coming up next as well as our past events here.Join the largest society on campus now, free.</p>
+                </SectionText>
 
             </ProjectsContainer>
            
@@ -147,6 +171,11 @@ function Home() {
                     <h1>Meet our Sponsors</h1>
                 </SectionTitle>
                 
+                <SectionText>
+                    <p>Every member, every event, every pizza slice is free because of these guys.</p>
+                </SectionText>
+
+
                 {/* clickable image Hyperlinks to sponsors websites */}
 
                 

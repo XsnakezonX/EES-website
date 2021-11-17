@@ -12,7 +12,7 @@ align-items: center;
 justify-content: space-around;
 `;
 
-const IconsContainer = styled.section`
+const IconsContainer = styled.div`
 background-color: #00364D;
 display: flex !important;
 flex-direction: row;
@@ -21,7 +21,7 @@ justify-content: space-around;
 `;
 
 
-const FooterHeadline = styled.section`
+const FooterHeadline = styled.h1`
 color: white;
 font-weight: 700;
 font-size: 30px;
