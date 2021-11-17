@@ -45,21 +45,12 @@ align-items: center;
 justify-content: center;
 `;
 
-const SocialsContainer = styled.section`
-background-color: #00364D;
-height: 100vh;
-background-size: cover;
-display: flex !important;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-`;
+
 
 function Home() {
     return (
         <>
-            <Navbar />
-			<RightNavbar />
+            
             <h1>Home Page</h1>
             
             <LandingContainer>
@@ -67,6 +58,9 @@ function Home() {
             </LandingContainer>
 
             <VideoContainer>
+
+                {/* Muted promotional video that plays on render and loops */}
+
                 <h1>Video</h1>
                 <video  autoPlay muted loop >
                     <source src="CoverVideo.mp4" />
@@ -74,9 +68,7 @@ function Home() {
                     </video>
             </VideoContainer>
 
-            <MapContainer>
-                <h1>Map</h1>
-            </MapContainer>
+           
 
             <SponsorContainer> 
                 <h1>Sponsors</h1>
@@ -103,17 +95,10 @@ function Home() {
 
             </SponsorContainer>
 
-            <SocialsContainer>
-                <h1>Socials</h1>
-
-                {/* clickable Icons to the Society's various social media */}
-
-                <a href="https://www.linkedin.com/company/exeterentrepreneurs/about/" target="_blank">LinkedIn</a>
-                <a href="https://www.facebook.com/ExeterEntrepreneurs" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/exeter_entrepreneurs/" target="_blank">Instagram</a>
-                <a href="https://twitter.com/EEUniSociety" target="_blank">Twitter</a>
-                <a href="https://business-school.exeter.ac.uk/" target="_blank">Email</a>
-            </SocialsContainer>
+            <MapContainer>
+                <h1>Map</h1>
+            </MapContainer>
+            
 
            
         </>

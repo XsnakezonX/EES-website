@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const LandingPage = styled.section`
-background-color: #d1d1d1;
+background-color: #00628C;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -13,7 +13,7 @@ justify-content: center;
 
 
 function Landing() {
-    
+
 
     function LightSwitch(){
         return true

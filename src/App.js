@@ -7,6 +7,7 @@ import CommunityProjects from './Components/CommunityProjects';
 import Navbar from './Components/Nav/Navbar';
 import RightNavbar from './Components/Nav/RightNavBar';
 import Landing from './Components/Landing';
+import Footer from './Components/Nav/Footer';
 
 
 
@@ -14,7 +15,8 @@ function App() {
   return (
     <>
       
-
+      <Navbar />
+			<RightNavbar /> 
       
 
       <Routes>
@@ -24,7 +26,7 @@ function App() {
         <Route exact path="/community" element={<CommunityProjects />} />
 			</Routes>
       
-     
+      <Footer />
     </>
   );
 }
