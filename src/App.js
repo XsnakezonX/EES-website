@@ -6,6 +6,8 @@ import Blog from "./Components/Blog";
 import CommunityProjects from "./Components/CommunityProjects";
 import Navbar from "./Components/Nav/Navbar";
 import RightNavbar from "./Components/Nav/RightNavBar";
+import Landing from "./Components/Landing";
+import Footer from "./Components/Nav/Footer";
 
 function App() {
 	return (
@@ -14,6 +16,7 @@ function App() {
 			<RightNavbar />
 
 			<Routes>
+				<Route exact path="/landing" element={<Landing />} />
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/blog" element={<Blog />} />
 				<Route
@@ -22,6 +25,8 @@ function App() {
 					element={<CommunityProjects />}
 				/>
 			</Routes>
+
+			<Footer />
 		</>
 	);
 }

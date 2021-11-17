@@ -38,6 +38,10 @@
 }
 
 video {
-	width: 98vw;
+	width: 100vw;
 	padding-bottom: 2%;
+}
+
+body {
+	background-color: #00364d;
 }
