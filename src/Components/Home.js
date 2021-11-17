@@ -1,7 +1,8 @@
 import React from "react";
+import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
-import Navbar from "./Nav/Navbar";
-import RightNavbar from "./Nav/RightNavBar";
+
 
 
 
@@ -118,6 +119,39 @@ justify-content: space-around;
 margin-left: 50px;
 margin-right: 50px;
 
+`;
+
+const Styles = styled.div`
+
+    {
+        background-color: #F8F8F8;        
+    }
+
+    .row {
+        min-height: 64vh;        
+    }
+
+    .card {
+        width: 12rem;
+        position: relative;
+        top: 25vh;
+        left: 15vh;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .card-title {
+        position: absolute;
+        font-size: 3.5rem;
+        right: 0.75rem;
+        bottom: 2rem;
+    }
+
+    .card-text {
+        padding-top: 1rem;
+        font-size: 0.75rem;
+    }
+    
 `;
 
 
@@ -253,6 +287,17 @@ function Home() {
                 <SectionTitle>
                     <h1>Map</h1>
                 </SectionTitle>
+            <Styles>
+            <Card>
+                <Card.Body>
+                    
+                    <Card.Text className="font-two">12 Upper St. Martin’s Lane WC2H 9FB, London</Card.Text>
+                </Card.Body>
+            </Card>
+            <Row className="blue-background">
+               <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
+            </Row>
+        </Styles>
 
             </MapContainer>
             
