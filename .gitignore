@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #Video
-public/Videos/CoverVideo.mp4
+public/
+Videos
