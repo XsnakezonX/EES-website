@@ -81,7 +81,18 @@ font-size: 72px;
 line-height: 86px;
 `;
 
+const SponsorIcons = styled.section`
 
+img {
+    filter: brightness(65%);
+    transition: 0.5s;
+}
+
+img:hover {
+    filter: brightness(100%);
+}
+
+`;
 
 
 
@@ -116,6 +127,7 @@ function Home() {
 
                 <SectionTitle>
                     <h1>We Are Exeter Entrepreneurs</h1>
+                    <button>Join our community</button>
                 </SectionTitle>
 
             </ProjectsContainer>
@@ -137,7 +149,13 @@ function Home() {
                 
                 {/* clickable image Hyperlinks to sponsors websites */}
 
-                <a href="https://home.kpmg/uk/en/home.html" target="_blank">KPMG</a>
+                
+                <SponsorIcons> 
+                        <a href="https://home.kpmg/uk/en/home.html" target="_blank">
+                            <img src="/KPMG.svg" alt="Partner logo" />
+                        </a>
+                    
+                
                 <a href="https://about.google/" target="_blank">Google</a>
                 <a href="https://about.google/" target="_blank">GitHub</a>
                 <a href="https://www.mozilla.org/en-US/" target="_blank">Mozilla</a>
@@ -154,7 +172,7 @@ function Home() {
                 <a href="https://www.buzzfeed.com/uk " target="_blank">buzzfeed</a>
                 <a href="https://webwisemedia.co.uk/" target="_blank">web wise media</a>
 
-
+                </SponsorIcons>
             </SponsorContainer>
 
             <MapContainer>
