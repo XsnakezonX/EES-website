@@ -3,6 +3,9 @@ import styled from "styled-components";
 
 const SocialsContainer = styled.section`
 background-color: #00364D;
+border-top-style: solid;
+border-width: 1px;
+border-color: white;
 display: flex !important;
 flex-direction: row;
 align-items: center;

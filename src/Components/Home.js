@@ -25,6 +25,26 @@ align-items: center;
 justify-content: center;
 `;
 
+const CallToActionContainer = styled.section`
+background-color: #5e69bd;
+height: 100vh;
+background-size: cover;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`;
+
+const ProjectsContainer = styled.section`
+background-color: #5e69bd;
+height: 100vh;
+background-size: cover;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`;
+
 const MapContainer = styled.section`
 background-color: #00364D;
 height: 100vh;
@@ -45,6 +65,11 @@ align-items: center;
 justify-content: center;
 `;
 
+const LandingTitle = styled.h1`
+color: white;
+font-weight
+`;
+
 
 
 function Home() {
@@ -54,7 +79,10 @@ function Home() {
             <h1>Home Page</h1>
             
             <LandingContainer>
-                 <h1>Landing</h1>
+
+                <h1>Totally Free</h1>
+                <h1>Always Innovating.</h1>
+
             </LandingContainer>
 
             <VideoContainer>
@@ -65,12 +93,25 @@ function Home() {
                 <video  autoPlay muted loop >
                     <source src="CoverVideo.mp4" />
                     This Browser does not support the video tag
-                    </video>
+                </video>
+
             </VideoContainer>
 
+            <ProjectsContainer>
+
+                <h1>We Are Exeter Entrepreneurs</h1>
+
+            </ProjectsContainer>
+
+            <ProjectsContainer>
+
+                <h1>Our Community Projects</h1>
+
+            </ProjectsContainer>
            
 
             <SponsorContainer> 
+
                 <h1>Sponsors</h1>
                 
                 {/* clickable image Hyperlinks to sponsors websites */}
@@ -96,7 +137,9 @@ function Home() {
             </SponsorContainer>
 
             <MapContainer>
+
                 <h1>Map</h1>
+
             </MapContainer>
             
 
