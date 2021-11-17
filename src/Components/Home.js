@@ -34,7 +34,6 @@ const CallToActionContainer = styled.section`
 `;
 
 const ProjectsContainer = styled.section`
-<<<<<<< HEAD
 background-color: #00364D;
 z-index: 0;
 height: 100vh;
@@ -64,21 +63,10 @@ button:hover {
     color: #00364D;
     cursor: pointer;
 }
-=======
-	background-color: #00364d;
-	height: 100vh;
-	margin-bottom: 100px;
-	margin-top: 100px;
-	background-size: cover;
-	display: flex !important;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
->>>>>>> c64c82955c9b593de36091bbee726f6eac0cdd4a
 `;
 
 const MapContainer = styled.section`
-	background-color: #00364d;
+	background-image: url(/MapSectionBg.svg);
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;
@@ -164,7 +152,7 @@ function Home() {
 				{/* Muted promotional video that plays on render and loops */}
 				
 				<video autoPlay muted loop>
-					<source src="CoverVideo.mp4" />
+					<source src="/Videos/CoverVideo.mp4" />
 				</video>
 			</VideoContainer>
 			
@@ -320,9 +308,7 @@ function Home() {
 				</SectionTitle>
 			</MapContainer>
 
-			<SocialsContainer>
-				<h1>Socials</h1>
-			</SocialsContainer>
+			
 		</>
 	);
 }

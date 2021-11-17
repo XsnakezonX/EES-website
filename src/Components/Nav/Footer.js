@@ -21,10 +21,10 @@ justify-content: space-around;
 `;
 
 
-const FooterHeadline = styled.h1`
+const FooterHeadline = styled.p`
 color: white;
-font-weight: 700;
-font-size: 30px;
+font-weight: 0;
+font-size: 43px;
 line-height: 86px;
 `;
 
@@ -34,7 +34,7 @@ function Footer() {
         <SocialsContainer>
                
             <FooterHeadline>
-                <h1>Our Socials</h1>
+                <p>© Exeter Entrepreneurs 2021</p>
             </FooterHeadline>
 
             {/* clickable Icons to the Society's various social media */}
