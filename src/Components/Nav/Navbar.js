@@ -61,8 +61,8 @@ function Navbar() {
             <Nav>
                 <LogoDiv>
                     <NavLogo>
-                        <NavLink style={{ backgroundColor: 'white', zIndex: '3' }} to="/">
-                            <h1>Logo</h1>
+                        <NavLink style={{ zIndex: '3', position: 'fixed' }} to="/">
+                            <img src="Logo_White_Transparent.png" alt="Logo" style={{width: '50px', marginLeft: '25px'}} />
                         </NavLink>
                     </NavLogo>
                     <BlogDiv>

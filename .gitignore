@@ -22,7 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
 #Video
 public/
-CoverVideo.mp4
+Videos
