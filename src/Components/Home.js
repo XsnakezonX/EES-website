@@ -81,13 +81,6 @@ font-size: 72px;
 line-height: 86px;
 `;
 
-const SectionTitle = styled.h1`
-color: white;
-font-weight: 700;
-font-size: 72px;
-line-height: 86px;
-`;
-
 const SectionText = styled.p`
 color: white;
 font-size: 20px;
