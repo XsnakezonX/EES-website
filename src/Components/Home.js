@@ -39,6 +39,8 @@ justify-content: center;
 const ProjectsContainer = styled.section`
 background-color: #00364D;
 height: 100vh;
+margin-bottom: 100px;
+margin-top: 100px;
 background-size: cover;
 display: flex !important;
 flex-direction: column;
@@ -81,13 +83,6 @@ font-size: 72px;
 line-height: 86px;
 `;
 
-const SectionTitle = styled.h1`
-color: white;
-font-weight: 700;
-font-size: 72px;
-line-height: 86px;
-`;
-
 const SectionText = styled.p`
 color: white;
 font-size: 20px;
@@ -107,6 +102,21 @@ img:hover {
 
 `;
 
+const ProjectRow = styled.div`
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+`;
+
+const ProjectCard = styled.div`
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+`;
 
 
 function Home() {
@@ -161,6 +171,38 @@ function Home() {
                     <p>Exeter Entrepreneurs are proud to have an exciting, diverse range of events running throughout the</p>   
                     <p>year. Be sure to check out what’s coming up next as well as our past events here.Join the largest society on campus now, free.</p>
                 </SectionText>
+
+                <ProjectRow>
+                    <ProjectCard>
+                        <img src="/ProjectPlaceHolder.svg" alt="Project Thumbnail" />
+                        <SectionText>
+                            <p>Project</p> 
+                        </SectionText>
+                    </ProjectCard>
+
+                    <ProjectCard>
+                        <img src="/ProjectPlaceHolder.svg" alt="Project Thumbnail" />
+                        <SectionText>
+                            <p>Project</p> 
+                        </SectionText>
+                    </ProjectCard>
+                </ProjectRow>
+
+                <ProjectRow>
+                    <ProjectCard>
+                        <img src="/ProjectPlaceHolder.svg" alt="Project Thumbnail" />
+                        <SectionText>
+                            <p>Project</p> 
+                        </SectionText>
+                    </ProjectCard>
+
+                    <ProjectCard>
+                        <img src="/ProjectPlaceHolder.svg" alt="Project Thumbnail" />
+                        <SectionText>
+                            <p>Project</p> 
+                        </SectionText>
+                    </ProjectCard>
+                </ProjectRow>
 
             </ProjectsContainer>
            
