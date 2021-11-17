@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from "./Nav/Navbar";
+import RightNavbar from "./Nav/RightNavBar";
+
 
 const LandingContainer = styled.section`
-background-color: #d1d1d1;
+background-color: #00364D;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -13,7 +16,7 @@ justify-content: center;
 
 
 const VideoContainer = styled.section`
-background-color: #a2a2ab;
+background-color: #00364D;
 height: 150vh;
 background-size: cover;
 display: flex !important;
@@ -23,7 +26,7 @@ justify-content: center;
 `;
 
 const MapContainer = styled.section`
-background-color: #8f8fba;
+background-color: #00364D;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -33,7 +36,7 @@ justify-content: center;
 `;
 
 const SponsorContainer = styled.section`
-background-color: #4f4f66;
+background-color: #00364D;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -43,7 +46,7 @@ justify-content: center;
 `;
 
 const SocialsContainer = styled.section`
-background-color: #424263;
+background-color: #00364D;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -55,6 +58,8 @@ justify-content: center;
 function Home() {
     return (
         <>
+            <Navbar />
+			<RightNavbar />
             <h1>Home Page</h1>
             
             <LandingContainer>
@@ -103,10 +108,10 @@ function Home() {
 
                 {/* clickable Icons to the Society's various social media */}
 
-                <a href="https://home.kpmg/uk/en/home.html" target="_blank">LinkedIn</a>
-                <a href="https://about.google/" target="_blank">Facebook</a>
-                <a href="https://about.google/" target="_blank">Instagram</a>
-                <a href="https://www.mozilla.org/en-US/" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/company/exeterentrepreneurs/about/" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/ExeterEntrepreneurs" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/exeter_entrepreneurs/" target="_blank">Instagram</a>
+                <a href="https://twitter.com/EEUniSociety" target="_blank">Twitter</a>
                 <a href="https://business-school.exeter.ac.uk/" target="_blank">Email</a>
             </SocialsContainer>
 
