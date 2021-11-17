@@ -51,7 +51,7 @@ function RightNavbar({open}) {
     return (
         <Ul open={open}>
              <NavLink
-            to={'/'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
+            to={'/home'} onClick={<Burger open={!open}/>} style={{ textDecoration: "none", color: 'white', fontSize: '5vw' }}>
                 <span>Home </span>
             </NavLink>
            
