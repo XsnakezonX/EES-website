@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const LandingContainer = styled.section`
-background-color: #d1d1d1;
+background-color: #00364D;
 height: 100vh;
 background-size: cover;
 display: flex !important;
@@ -59,6 +59,7 @@ function Home() {
             
             <LandingContainer>
             <h1>Landing</h1>
+            <object style={{backgroundImage: 'url(./Logo_Blue.png)' , backgroundRepeat: 'no-repeat', border:'none', boxShadow: '0 0 100px greenyellow'}} src='http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif'></object>
             </LandingContainer>
 
             <VideoContainer>
