@@ -299,6 +299,18 @@ function Home() {
                     <a href="https://www.oaknorth.co.uk/" target="_blank">
                         <img src="/ashurst.svg" alt="Partner logo" />
 					</a>
+                    <a href="https://www.db.com/" target="_blank">
+                        <img src="/DBank.svg" alt="Partner logo" />
+					</a>
+                    <a href="https://aws.amazon.com/" target="_blank">
+                        <img src="/AWS.svg" alt="Partner logo" />
+					</a>
+                    <a href="https://www.teachfirst.org.uk/" target="_blank">
+                        <img src="/TeachFirst.svg" alt="Partner logo" />
+					</a>
+                    <a href="https://www.buzzfeed.com/uk " target="_blank">
+                        <img src="/BuzzFeed.svg" alt="Partner logo" />
+					</a>
 
 					<a href="https://www.mozilla.org/en-US/" target="_blank">
 						Mozilla
@@ -312,17 +324,6 @@ function Home() {
 					<a href="https://www.marshmclennan.com/" target="_blank">
 						Marsh and McLennan Companies{" "}
 					</a>
-					
-					
-					<a href="https://www.db.com/" target="_blank">
-						Deutsche Bank
-					</a>
-					<a href="https://aws.amazon.com/" target="_blank">
-						Amazon AWS
-					</a>
-					<a href="https://www.teachfirst.org.uk/" target="_blank">
-						teach first
-					</a>
 					<a href="https://www.altitudeads.com/" target="_blank">
 						altitude ads
 					</a>
@@ -331,9 +332,6 @@ function Home() {
 					</a>
 					<a href="https://deliveroo.co.uk/" target="_blank">
 						deliveroo
-					</a>
-					<a href="https://www.buzzfeed.com/uk " target="_blank">
-						buzzfeed
 					</a>
 					<a href="https://webwisemedia.co.uk/" target="_blank">
 						web wise media
