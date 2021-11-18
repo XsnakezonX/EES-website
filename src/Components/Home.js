@@ -155,11 +155,33 @@ const SponsorsRow = styled.div`
 
         .LogoSpacing{
             margin:10px;
-            width: 13vw;
+            width: 16vw;
         }
-        
-    
-    }
+	}
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 10px;
+
+		.LogoSpacing {
+			margin: 10px;
+			width: 20vw;
+		}
+	}
+
+	@media screen and (max-width: 575px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 10px;
+
+		.LogoSpacing {
+			margin: 10px;
+			width: 24vw;
+		}
+	}
 `;
 
 const ProjectRow = styled.div`
