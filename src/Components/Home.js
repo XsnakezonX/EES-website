@@ -2,6 +2,7 @@ import React from "react";
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
+import Projects from "./Projects";
 
 
 const LandingContainer = styled.section`
@@ -16,7 +17,7 @@ const LandingContainer = styled.section`
 
 const VideoContainer = styled.section`
 	background-color: #002433;
-	height: 100vh;
+	height: 95vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -37,23 +38,25 @@ const CallToActionContainer = styled.section`
 const ProjectsContainer = styled.section`
 background-color: #002433;
 z-index: 0;
-width: 100vw;
+height: 100vh;
 margin-bottom: 100px;
 margin-top: 100px;
+background-size: cover;
 display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 
 button {
-    margin-top: 2.74vh;
-    padding: 2.19vh 2.77vw;
+    margin-top: 20px;
+    padding: 16px 40px;
     border: 2px solid #fff;
     border-radius: 39px;
     background: none;
     color: #fff;
-    font-size: 2.22vw;
-    width: 36.45vw;
+    font-size: 2rem;
+    width: 525px;
+    height: 75px;
     transition: background-color, color 0.3s ease-in;
 }
 
@@ -65,8 +68,8 @@ button:hover {
 `;
 
 const MapContainer = styled.section`
-	background-image: url(/forum.png);
-	height: 80vh;
+	background-image: url(/MapSectionBg.svg);
+	height: 110vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -97,19 +100,29 @@ const LandingTitle = styled.h1`
 const SectionTitle = styled.h1`
 color: white;
 font-weight: 200;
-font-size: 3.8vw;
+font-size: 4rem;
 line-height: 5.4rem;
 z-index: 2;
-display: flex !important;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+
+div {
+    background-color: #00628C;
+    width: 32rem;
+    height: 6rem;
+    z-index: -1;
+}
 `;
 
 const SectionText = styled.p`
 color: white;
 margin-top: -40px;
-font-size: 1.6vw;
+font-size: 1.5rem;
+line-height: 1.8rem;
+`;
+
+const SectionContent = styled.p`
+color: white;
+margin-top: -80px;
+font-size: 1.5rem;
 line-height: 1.8rem;
 `;
 
@@ -149,21 +162,37 @@ const ProjectCard = styled.div`
 	margin-right: 50px;
 `;
 
-const MapTitle = styled.div`
-color: white;
-margin-top: -40px;
-font-size: 1.0rem;
-line-height: 1.0rem;
+const Styles = styled.div`
 
+    {
+        background-color: #F8F8F8;        
+    }
 
-`;
+    .row {
+        min-height: 64vh;        
+    }
 
-const MapSubTitle = styled.p`
-color: white;
-margin-top: -40px;
-font-size: 1.0rem;
-line-height: 1.0rem;
+    .card {
+        width: 12rem;
+        position: relative;
+        top: 25vh;
+        left: 15vh;
+        border: 0;
+        border-radius: 0;
+    }
 
+    .card-title {
+        position: absolute;
+        font-size: 3.5rem;
+        right: 0.75rem;
+        bottom: 2rem;
+    }
+
+    .card-text {
+        padding-top: 1rem;
+        font-size: 0.75rem;
+    }
+    
 `;
 
 //Projects Section
@@ -196,49 +225,47 @@ const Boxp = styled.p`
 	color: #62b22f;
 `;
 
+const TreeContainer = styled.div`
+margin-bottom: 16.4vh;
+	
+`;
 
+const TreeImage = styled.img`
+	height: 2036px;
 
-const ViikotLeft = styled.div` 
+	@media screen and (max-width: 992px) {
+		display: none;
+	  }
+`;
+
+const ViikotRight = styled.div` 
 	display: flex;
     justify-content: center;
 	width: 295px;
-	height: 225px;
 	margin-top: 0px;
-	border-style: solid;
-	border-width: 3px;
-	border-color: #468845;
-	border-radius: 20px;
 	font-size: 20px;
 	line-height: 175%;
 	font-weight: 400;
-	text-align: center;
-	background-color: white;
-	z-index: 3;
 	justify-content:center;
 	${'' /* align-items:center; */}
+	padding-right: 120px;
 `;
 
 const Viikot = styled.div` 
     display:flex;
 	width: 295px;
-	height: 225px;
     margin-top: 0px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #468845;
-    border-radius: 20px;
     font-size: 20px;
     line-height: 175%;
     font-weight: 400;
-    text-align: center;
-	background-color: white;
-	z-index: 3;
 	${'' /* align-items:center; */}
 	justify-content:center;
+	padding-left: 120px;
 `;
 
 const Box = styled.div`
 display: block;
+
 -webkit-box-pack: center;
 -webkit-justify-content: center;
 -ms-flex-pack: center;
@@ -271,6 +298,7 @@ const Right = styled.div`
 `;
 
 const Left = styled.div`
+	display: flex;
 	padding-left: 120px;
 
 	@media screen and (max-width: 992px) {
@@ -278,9 +306,6 @@ const Left = styled.div`
 		padding-left: 0px;
 	  }
 `;
-
-
-
 
 
 
@@ -299,11 +324,12 @@ function Home() {
 
 
 			<ProjectsContainer className="container-fluid">
-				<SectionTitle>
+				<SectionTitle className='row'>
 					<h1>We Are Exeter Entrepreneurs</h1>
+					<div></div>
 				</SectionTitle>
 
-				<SectionText>
+				<SectionText className='row'>
 					<p>Join the largest society on campus now, free.</p>
 				</SectionText>
 
@@ -331,60 +357,36 @@ function Home() {
 			</ProjectsContainer>
 			<Box className='container-fluid'>
 				<Structure>
-				<Left className='row'>
-					<Viikot>
-						<BoxH1>Week 1</BoxH1>
-						<Boxp>Numbers and Basic Operations</Boxp>
-
-					</Viikot>
-				</Left>
-				<Right className='row'>
-					<ViikotLeft>
-						<BoxH1>Week 2</BoxH1>
-						<Boxp>Values, Variables and Expressions</Boxp>
-					</ViikotLeft>
-				</Right>
-				<Left className='row'>
-					<Viikot>
-						<BoxH1>Week 3</BoxH1>
-						<Boxp>Data Types and Structures</Boxp>
-					</Viikot>
-				</Left>
-				<Right className='row'>
-					<ViikotLeft>
-						<BoxH1>Week 4</BoxH1>
-						<Boxp>Functions</Boxp>
-					</ViikotLeft>
-				</Right>
-				<Left className='row'>
-					<Viikot>
-						<BoxH1>REST WEEK</BoxH1>
-					</Viikot>
-				</Left>
-				<Right className='row'>
-					<ViikotLeft>
-						<BoxH1>Week 5</BoxH1>
-						<Boxp>Control Structures</Boxp>
-					</ViikotLeft>
-				</Right>
-				<Left className='row'>
-					<Viikot>
-						<BoxH1>Week 6</BoxH1>
-						<Boxp>Beauty Of Code</Boxp>
-					</Viikot>
-				</Left>
-				<Right className='row'>
-					<ViikotLeft>
-						<BoxH1>Week 7</BoxH1>
-						<Boxp>File Handling and Databases</Boxp>
-					</ViikotLeft>
-				</Right>
-				<Left className='row'>
-					<Viikot>
-						<BoxH1>Week 8</BoxH1>
-						<Boxp>Recap and Test!</Boxp>
-					</Viikot>
-				</Left>
+					<Left className='row'>
+						<Viikot>
+							<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
+					<Left className='row'>
+						<Viikot>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
+					<Left className='row'>
+						<Viikot>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
 				</Structure>
 			</Box>
 
@@ -474,15 +476,12 @@ function Home() {
 				</SectionTitle>
 				<Styles>
 
-                <MapTitle>
-                    <h1>Location</h1>
-                    <p>We are located at Exeter’s University Campus</p>
-                </MapTitle>
-               
+					<Row className="blue-background">
+						<iframe title="map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
+					</Row>
+				</Styles>
 
-              
-                <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
-                
+			</MapContainer>
 
 
 		</>
