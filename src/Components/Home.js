@@ -196,7 +196,7 @@ function Home() {
 	return (
 		<>
 
-			<VideoContainer>
+			<VideoContainer className="container-fluid">
 				{/* Muted promotional video that plays on render and loops */}
 				
 				<video autoPlay muted loop playsInline>
@@ -205,7 +205,7 @@ function Home() {
 			</VideoContainer>
 			
 
-			<ProjectsContainer>
+			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
 					<h1>We Are Exeter Entrepreneurs</h1>
                     <div></div>
@@ -218,7 +218,7 @@ function Home() {
 				<button>Join our community</button>
 			</ProjectsContainer>
 
-			<ProjectsContainer>
+			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
 					<h1>Our Community Projects</h1>
 				</SectionTitle>
@@ -235,7 +235,7 @@ function Home() {
 					</p>
 				</SectionText>
 
-				<ProjectRow>
+				<ProjectRow className="row">
 					<ProjectCard>
 						<img
 							src="/ProjectPlaceHolder.svg"
@@ -257,7 +257,7 @@ function Home() {
 					</ProjectCard>
 				</ProjectRow>
 
-				<ProjectRow>
+				<ProjectRow className="row">
 					<ProjectCard>
 						<img
 							src="/ProjectPlaceHolder.svg"
@@ -280,12 +280,12 @@ function Home() {
 				</ProjectRow>
 			</ProjectsContainer>
 
-			<SponsorContainer>
-				<SectionTitle>
+			<SponsorContainer className="container-fluid">
+				<SectionTitle className="row">
 					<h1>Meet our Sponsors</h1>
 				</SectionTitle>
 
-				<SectionText>
+				<SectionText className="row">
 					<p>
 						Every member, every event, every pizza slice is free
 						because of these guys.
@@ -295,7 +295,7 @@ function Home() {
 				{/* clickable image Hyperlinks to sponsors websites */}
 
 				<SponsorIcons>
-                    <SponsorsRow>
+                    <SponsorsRow className="row">
                         <a href="https://home.kpmg/uk/en/home.html" target="_blank">
                             <img src="/KPMG.svg" alt="Partner logo" className="LogoSpacing" />
                         </a>
@@ -310,7 +310,7 @@ function Home() {
                         </a>
                     </SponsorsRow>
 
-                    <SponsorsRow>
+                    <SponsorsRow className="row">
                         <a href="https://www.oaknorth.co.uk/" target="_blank">
                             <img src="/OakNorth.svg" alt="Partner logo" className="LogoSpacing" />
                         </a>
@@ -325,7 +325,7 @@ function Home() {
                         </a>
                     </SponsorsRow>
 
-                    <SponsorsRow>
+                    <SponsorsRow className="row">
                     <a href="https://www.buzzfeed.com/uk " target="_blank">
                         <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
@@ -359,7 +359,7 @@ function Home() {
 				</SponsorIcons>
 			</SponsorContainer>
 
-                <MapContainer>
+                <MapContainer className="container-fluid">
 
                 <SectionTitle>
                     <h1>Map</h1>
