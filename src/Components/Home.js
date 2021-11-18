@@ -204,10 +204,10 @@ function Home() {
 				<SectionText>
 					<p>
 						Exeter Entrepreneurs are proud to have an exciting,
-						diverse range of events running throughout the
+						diverse range of events running throughout the year.
 					</p>
 					<p>
-						year. Be sure to check out what’s coming up next as well
+						 Be sure to check out what’s coming up next as well
 						as our past events here.Join the largest society on
 						campus now, free.
 					</p>
