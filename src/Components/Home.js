@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 
 const LandingContainer = styled.section`
-	background-color: #00364d;
+	background-color: #002433;
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;
@@ -15,7 +15,7 @@ const LandingContainer = styled.section`
 `;
 
 const VideoContainer = styled.section`
-	background-color: #00364d;
+	background-color: #002433;
 	height: 95vh;
 	background-size: cover;
 	display: flex !important;
@@ -25,7 +25,7 @@ const VideoContainer = styled.section`
 `;
 
 const CallToActionContainer = styled.section`
-	background-color: #00364d;
+	background-color: #002433;
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;
@@ -35,7 +35,7 @@ const CallToActionContainer = styled.section`
 `;
 
 const ProjectsContainer = styled.section`
-background-color: #00364D;
+background-color: #002433;
 z-index: 0;
 height: 100vh;
 margin-bottom: 100px;
@@ -77,7 +77,7 @@ const MapContainer = styled.section`
 `;
 
 const SponsorContainer = styled.section`
-	background-color: #00364d;
+	background-color: #002433;
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;

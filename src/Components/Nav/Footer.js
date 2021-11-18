@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const SocialsContainer = styled.section`
-background-color: #00364D;
+background-color: #002433;
 border-top-style: solid;
 border-width: 1px;
 border-color: white;
@@ -13,7 +13,7 @@ justify-content: space-around;
 `;
 
 const IconsContainer = styled.div`
-background-color: #00364D;
+background-color: #002433;
 display: flex !important;
 flex-direction: row;
 align-items: center;
