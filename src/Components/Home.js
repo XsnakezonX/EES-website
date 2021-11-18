@@ -68,7 +68,7 @@ button:hover {
 
 const MapContainer = styled.section`
 	background-image: url(/MapSectionBg.svg);
-	height: 100vh;
+	height: 110vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -328,16 +328,17 @@ function Home() {
                     <a href="https://www.buzzfeed.com/uk " target="_blank">
                         <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
+                    <a href="https://business-school.exeter.ac.uk/" target="_blank">
+                         <img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
+                    <a href="https://deliveroo.co.uk/" target="_blank">
+                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
                     </SponsorsRow>
 					<a href="https://www.mozilla.org/en-US/" target="_blank">
 						Mozilla
 					</a>
-					<a
-						href="https://business-school.exeter.ac.uk/"
-						target="_blank"
-					>
-						Exeter Business
-					</a>
+					
 					<a href="https://www.marshmclennan.com/" target="_blank">
 						Marsh and McLennan Companies{" "}
 					</a>
