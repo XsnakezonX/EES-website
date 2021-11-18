@@ -55,7 +55,7 @@ justify-content: space-between;
 
 const FooterHeadline = styled.div`
 color: white;
-font-size: 43px;
+font-size: 2.98vw;
 margin-bottom: 5px;
 margin-right: 5vw;
 
@@ -65,7 +65,7 @@ p{
 
 @media screen and (max-width: 768px) {
     color: white;
-    font-size: 35px;
+    font-size: 3.78vw;
     margin-left: 10px;
     margin-bottom: 5px;
     margin-right: 5vw;
