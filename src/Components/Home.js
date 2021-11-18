@@ -190,25 +190,139 @@ const Styles = styled.div`
     
 `;
 
+//Projects Section
+
+const Banner = styled.div`
+
+	margin-left: 200px;
+
+`;
+
+
+const BannerH1 = styled.h1`
+	font-family: 'Ubuntu', sans-serif, bold ;
+	font-style: bold;
+	color: #62b22f;
+	font-size: 70px;
+`;
+
+const BoxH1 = styled.h1`
+	font-family: 'Ubuntu', sans-serif, bold ;
+	font-style: bold;
+	font-size: 2vw;
+	color: #62b22f;
+`;
+
+const Boxp = styled.p`
+	font-family: 'Raleway', sans-serif, bold ;
+	font-style: bold;
+	font-size: 1.5vw;
+	color: #62b22f;
+`;
+
+
+
+const ViikotLeft = styled.div` 
+	display: flex;
+    justify-content: center;
+	width: 295px;
+	height: 225px;
+	margin-top: 0px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #468845;
+	border-radius: 20px;
+	font-size: 20px;
+	line-height: 175%;
+	font-weight: 400;
+	text-align: center;
+	background-color: white;
+	z-index: 3;
+	justify-content:center;
+	${'' /* align-items:center; */}
+`;
+
+const Viikot = styled.div` 
+    display:flex;
+	width: 295px;
+	height: 225px;
+    margin-top: 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #468845;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 175%;
+    font-weight: 400;
+    text-align: center;
+	background-color: white;
+	z-index: 3;
+	${'' /* align-items:center; */}
+	justify-content:center;
+`;
+
+const Box = styled.div`
+display: block;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+`;
+
+const Structure = styled.div`
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-direction: column;
+`;
+
+
+const Right = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-right: 0px;
+	  }
+`;
+
+const Left = styled.div`
+	padding-left: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-left: 0px;
+	  }
+`;
+
+
 
 function Home() {
-    
+
 	return (
 		<>
 
 			<VideoContainer className="container-fluid">
 				{/* Muted promotional video that plays on render and loops */}
-				
+
 				<video autoPlay muted loop playsInline>
 					<source src="/Videos/CoverVideo.mp4" />
 				</video>
 			</VideoContainer>
-			
+
 
 			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
 					<h1>We Are Exeter Entrepreneurs</h1>
-                    <div></div>
+					<div></div>
 				</SectionTitle>
 
 				<SectionText>
@@ -219,66 +333,82 @@ function Home() {
 			</ProjectsContainer>
 
 			<ProjectsContainer className="container-fluid">
-				<SectionTitle>
-					<h1>Our Community Projects</h1>
-				</SectionTitle>
+				<div className='row'>
+					<SectionTitle>
+						<h1>Our Community Projects</h1>
+					</SectionTitle>
 
-				<SectionText>
-					<p>
-						Exeter Entrepreneurs are proud to have an exciting,
-						diverse range of events running throughout the
-					</p>
-					<p>
-						year. Be sure to check out what’s coming up next as well
-						as our past events here.Join the largest society on
-						campus now, free.
-					</p>
-				</SectionText>
-
-				<ProjectRow className="row">
-					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
-						<SectionText>
-							<p>Project</p>
-						</SectionText>
-					</ProjectCard>
-
-					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
-						<SectionText>
-							<p>Project</p>
-						</SectionText>
-					</ProjectCard>
-				</ProjectRow>
-
-				<ProjectRow className="row">
-					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
-						<SectionText>
-							<p>Project</p>
-						</SectionText>
-					</ProjectCard>
-
-					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
-						<SectionText>
-							<p>Project</p>
-						</SectionText>
-					</ProjectCard>
-				</ProjectRow>
+					<SectionText>
+						<p>
+							Exeter Entrepreneurs are proud to have an exciting,
+							diverse range of events running throughout the
+						</p>
+						<p>
+							year. Be sure to check out what’s coming up next as well
+							as our past events here.Join the largest society on
+							campus now, free.
+						</p>
+					</SectionText>
+				</div>
 			</ProjectsContainer>
+			<Box className='container-fluid'>
+				<Structure>
+				<Left className='row'>
+					<Viikot>
+						<BoxH1>Week 1</BoxH1>
+						<Boxp>Numbers and Basic Operations</Boxp>
+
+					</Viikot>
+				</Left>
+				<Right className='row'>
+					<ViikotLeft>
+						<BoxH1>Week 2</BoxH1>
+						<Boxp>Values, Variables and Expressions</Boxp>
+					</ViikotLeft>
+				</Right>
+				<Left className='row'>
+					<Viikot>
+						<BoxH1>Week 3</BoxH1>
+						<Boxp>Data Types and Structures</Boxp>
+					</Viikot>
+				</Left>
+				<Right className='row'>
+					<ViikotLeft>
+						<BoxH1>Week 4</BoxH1>
+						<Boxp>Functions</Boxp>
+					</ViikotLeft>
+				</Right>
+				<Left className='row'>
+					<Viikot>
+						<BoxH1>REST WEEK</BoxH1>
+					</Viikot>
+				</Left>
+				<Right className='row'>
+					<ViikotLeft>
+						<BoxH1>Week 5</BoxH1>
+						<Boxp>Control Structures</Boxp>
+					</ViikotLeft>
+				</Right>
+				<Left className='row'>
+					<Viikot>
+						<BoxH1>Week 6</BoxH1>
+						<Boxp>Beauty Of Code</Boxp>
+					</Viikot>
+				</Left>
+				<Right className='row'>
+					<ViikotLeft>
+						<BoxH1>Week 7</BoxH1>
+						<Boxp>File Handling and Databases</Boxp>
+					</ViikotLeft>
+				</Right>
+				<Left className='row'>
+					<Viikot>
+						<BoxH1>Week 8</BoxH1>
+						<Boxp>Recap and Test!</Boxp>
+					</Viikot>
+				</Left>
+				</Structure>
+			</Box>
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">
@@ -295,47 +425,47 @@ function Home() {
 				{/* clickable image Hyperlinks to sponsors websites */}
 
 				<SponsorIcons>
-                    <SponsorsRow className="row">
-                        <a href="https://home.kpmg/uk/en/home.html" target="_blank">
-                            <img src="/KPMG.svg" alt="Partner logo" className="LogoSpacing" />
-                        </a>
-                        <a href="https://about.google/" target="_blank">
-                            <img src="/Google.svg" alt="Partner logo" className="LogoSpacing"/>
-                        </a>
-                        <a href="https://github.com/" target="_blank">
-                            <img src="/GitHub.svg" alt="Partner logo" className="LogoSpacing" />
-                        </a>
-                        <a href="https://www.ashurst.com/" target="_blank">
-                            <img src="/ashurst.svg" alt="Partner logo" className="LogoSpacing" />
-                        </a>
-                    </SponsorsRow>
+					<SponsorsRow className="row">
+						<a href="https://home.kpmg/uk/en/home.html" target="_blank">
+							<img src="/KPMG.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+						<a href="https://about.google/" target="_blank">
+							<img src="/Google.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+						<a href="https://github.com/" target="_blank">
+							<img src="/GitHub.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+						<a href="https://www.ashurst.com/" target="_blank">
+							<img src="/ashurst.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+					</SponsorsRow>
 
-                    <SponsorsRow className="row">
-                        <a href="https://www.oaknorth.co.uk/" target="_blank">
-                            <img src="/OakNorth.svg" alt="Partner logo" className="LogoSpacing" />
-                        </a>
-                        <a href="https://www.db.com/" target="_blank">
-                            <img src="/DBank.svg" alt="Partner logo" className="LogoSpacing" />
-                        </a>
-                        <a href="https://aws.amazon.com/" target="_blank">
-                            <img src="/AWS.svg" alt="Partner logo"  className="LogoSpacing"/>
-                        </a>
-                        <a href="https://www.teachfirst.org.uk/" target="_blank">
-                            <img src="/TeachFirst.svg" alt="Partner logo" className="LogoSpacing" />
-                        </a>
-                    </SponsorsRow>
+					<SponsorsRow className="row">
+						<a href="https://www.oaknorth.co.uk/" target="_blank">
+							<img src="/OakNorth.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+						<a href="https://www.db.com/" target="_blank">
+							<img src="/DBank.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+						<a href="https://aws.amazon.com/" target="_blank">
+							<img src="/AWS.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+						<a href="https://www.teachfirst.org.uk/" target="_blank">
+							<img src="/TeachFirst.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+					</SponsorsRow>
 
-                    <SponsorsRow className="row">
-                    <a href="https://www.buzzfeed.com/uk " target="_blank">
-                        <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
-					</a>
-                    <a href="https://business-school.exeter.ac.uk/" target="_blank">
-                         <img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
-					</a>
-                    <a href="https://deliveroo.co.uk/" target="_blank">
-                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
-					</a>
-                    </SponsorsRow>
+					<SponsorsRow className="row">
+						<a href="https://www.buzzfeed.com/uk " target="_blank">
+							<img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+						<a href="https://business-school.exeter.ac.uk/" target="_blank">
+							<img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+						<a href="https://deliveroo.co.uk/" target="_blank">
+							<img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+						</a>
+					</SponsorsRow>
 					{/* <a href="https://www.mozilla.org/en-US/" target="_blank">
 						Mozilla
 					</a>
@@ -359,21 +489,21 @@ function Home() {
 				</SponsorIcons>
 			</SponsorContainer>
 
-                <MapContainer className="container-fluid">
+			<MapContainer className="container-fluid">
 
-                <SectionTitle>
-                    <h1>Map</h1>
-                </SectionTitle>
-                <Styles>
+				<SectionTitle>
+					<h1>Map</h1>
+				</SectionTitle>
+				<Styles>
 
-                <Row className="blue-background">
-                <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
-                </Row>
-                </Styles>
+					<Row className="blue-background">
+						<iframe title="map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
+					</Row>
+				</Styles>
 
-                </MapContainer>
+			</MapContainer>
 
-			
+
 		</>
 	);
 }
