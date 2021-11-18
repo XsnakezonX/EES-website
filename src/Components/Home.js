@@ -37,10 +37,9 @@ const CallToActionContainer = styled.section`
 const ProjectsContainer = styled.section`
 background-color: #00364D;
 z-index: 0;
-height: 100vh;
+width: 100vw;
 margin-bottom: 100px;
 margin-top: 100px;
-background-size: cover;
 display: flex !important;
 flex-direction: column;
 align-items: center;
@@ -98,19 +97,13 @@ const LandingTitle = styled.h1`
 const SectionTitle = styled.h1`
 color: white;
 font-weight: 200;
-font-size: 4rem;
+font-size: 3.5rem;
 line-height: 5.4rem;
 z-index: 2;
-
-div {
-    background-color: #00628C;
-    position: absolute;
-    width: 32rem;
-    height: 6rem;
-    z-index: -1;
-    margin-top: -190px;
-    margin-left: 835px;
-}
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `;
 
 const SectionText = styled.p`
@@ -196,7 +189,6 @@ function Home() {
 			<ProjectsContainer>
 				<SectionTitle>
 					<h1>We Are Exeter Entrepreneurs</h1>
-                    <div></div>
 				</SectionTitle>
 
 				<SectionText>
