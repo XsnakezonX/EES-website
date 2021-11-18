@@ -43,5 +43,10 @@ video {
 }
 
 body {
-	background-color: #00364d;
+  background-color: #00364D;
+}
+
+@font-face {
+  font-family: lato;
+  src: url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
 }

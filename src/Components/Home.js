@@ -34,19 +34,39 @@ const CallToActionContainer = styled.section`
 `;
 
 const ProjectsContainer = styled.section`
-	background-color: #00364d;
-	height: 100vh;
-	margin-bottom: 100px;
-	margin-top: 100px;
-	background-size: cover;
-	display: flex !important;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+background-color: #00364D;
+z-index: 0;
+height: 100vh;
+margin-bottom: 100px;
+margin-top: 100px;
+background-size: cover;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+button {
+    margin-top: 20px;
+    padding: 16px 40px;
+    border: 2px solid #fff;
+    border-radius: 39px;
+    background: none;
+    color: #fff;
+    font-size: 2rem;
+    width: 525px;
+    height: 75px;
+    transition: background-color, color 0.3s ease-in;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #00364D;
+    cursor: pointer;
+}
 `;
 
 const MapContainer = styled.section`
-	background-color: #00364d;
+	background-image: url(/MapSectionBg.svg);
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;
@@ -75,16 +95,28 @@ const LandingTitle = styled.h1`
 `;
 
 const SectionTitle = styled.h1`
-	color: white;
-	font-weight: 700;
-	font-size: 72px;
-	line-height: 86px;
+color: white;
+font-weight: 200;
+font-size: 4rem;
+line-height: 5.4rem;
+z-index: 2;
+
+div {
+    background-color: #00628C;
+    position: absolute;
+    width: 32rem;
+    height: 6rem;
+    z-index: -1;
+    margin-top: -190px;
+    margin-left: 835px;
+}
 `;
 
 const SectionText = styled.p`
-	color: white;
-	font-size: 20px;
-	line-height: 86px;
+color: white;
+margin-top: -40px;
+font-size: 1.5rem;
+line-height: 1.8rem;
 `;
 
 const SponsorIcons = styled.div`
@@ -120,7 +152,7 @@ function Home() {
 				{/* Muted promotional video that plays on render and loops */}
 				
 				<video autoPlay muted loop>
-					<source src="Videos/CoverVideo.mp4" />
+					<source src="/Videos/CoverVideo.mp4" />
 				</video>
 			</VideoContainer>
 			
@@ -128,6 +160,7 @@ function Home() {
 			<ProjectsContainer>
 				<SectionTitle>
 					<h1>We Are Exeter Entrepreneurs</h1>
+                    <div></div>
 				</SectionTitle>
 
 				<SectionText>
@@ -275,9 +308,7 @@ function Home() {
 				</SectionTitle>
 			</MapContainer>
 
-			<SocialsContainer>
-				<h1>Socials</h1>
-			</SocialsContainer>
+			
 		</>
 	);
 }
