@@ -400,7 +400,7 @@ function Home() {
 
                 <MapTitle>
                     <h1>Location</h1>
-                    <p>We are located at Exeter’s University Campus</p>
+                    <p>We are based at the heart of campus</p>
                 </MapTitle>
                
 
