@@ -168,7 +168,7 @@ function Home() {
 
                 <h1>Video</h1>
                 <video  autoPlay muted loop >
-                    <source src="CoverVideo.mp4" />
+                    <source src="/Videos/CoverVideo.mp4" />
                     This Browser does not support the video tag
                 </video>
 
