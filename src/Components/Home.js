@@ -65,8 +65,8 @@ button:hover {
 `;
 
 const MapContainer = styled.section`
-	background-image: url(/MapSectionBg.svg);
-	height: 110vh;
+	background-image: url(/forum.png);
+	height: 80vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -149,38 +149,25 @@ const ProjectCard = styled.div`
 	margin-right: 50px;
 `;
 
-const Styles = styled.div`
+const MapTitle = styled.div`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
 
-    {
-        background-color: #F8F8F8;        
-    }
 
-    .row {
-        min-height: 64vh;        
-    }
-
-    .card {
-        width: 12rem;
-        position: relative;
-        top: 25vh;
-        left: 15vh;
-        border: 0;
-        border-radius: 0;
-    }
-
-    .card-title {
-        position: absolute;
-        font-size: 3.5rem;
-        right: 0.75rem;
-        bottom: 2rem;
-    }
-
-    .card-text {
-        padding-top: 1rem;
-        font-size: 0.75rem;
-    }
-    
 `;
+
+const MapSubTitle = styled.p`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
+
+`;
+
+
+
 
 
 function Home() {
@@ -352,15 +339,15 @@ function Home() {
 
                 <MapContainer className="container-fluid">
 
-                <SectionTitle>
-                    <h1>Map</h1>
-                </SectionTitle>
-                <Styles>
+                <MapTitle>
+                    <h1>Location</h1>
+                    <p>We are located at Exeter’s University Campus</p>
+                </MapTitle>
+               
 
-                <Row className="blue-background">
+              
                 <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
-                </Row>
-                </Styles>
+                
 
                 </MapContainer>
 
