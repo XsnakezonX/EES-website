@@ -16,7 +16,7 @@ const LandingContainer = styled.section`
 
 const VideoContainer = styled.section`
 	background-color: #002433;
-	height: 95vh;
+	height: 100vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -46,15 +46,14 @@ align-items: center;
 justify-content: center;
 
 button {
-    margin-top: 20px;
-    padding: 16px 40px;
+    margin-top: 2.74vh;
+    padding: 2.19vh 2.77vw;
     border: 2px solid #fff;
     border-radius: 39px;
     background: none;
     color: #fff;
-    font-size: 2rem;
-    width: 525px;
-    height: 75px;
+    font-size: 2.22vw;
+    width: 36.45vw;
     transition: background-color, color 0.3s ease-in;
 }
 
@@ -98,7 +97,7 @@ const LandingTitle = styled.h1`
 const SectionTitle = styled.h1`
 color: white;
 font-weight: 200;
-font-size: 3.5rem;
+font-size: 3.8vw;
 line-height: 5.4rem;
 z-index: 2;
 display: flex !important;
@@ -110,7 +109,7 @@ justify-content: center;
 const SectionText = styled.p`
 color: white;
 margin-top: -40px;
-font-size: 1.5rem;
+font-size: 1.6vw;
 line-height: 1.8rem;
 `;
 
