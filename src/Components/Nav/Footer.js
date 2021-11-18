@@ -12,15 +12,44 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 
+@media screen and (max-width: 1150px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+    margin: 10px;
+
+
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+        margin: 10px;
+    
+    
+  }
 `;
 
 const IconsContainer = styled.div`
 background-color: #002433;
 width: 30vw;
+height: 10vh;
 display: flex !important;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
+
+@media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+        margin: 10px;
+    
+    .IddleIcon {
+        width: 5vw; 
+    }
+    
+  }
 `;
 
 
@@ -32,6 +61,21 @@ margin-right: 5vw;
 
 p{
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    color: white;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 5vw;
+    
+    p{
+        margin: 0;
+    }
+    
+}
+
 }
 `;
 

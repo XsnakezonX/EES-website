@@ -17,6 +17,7 @@ const LandingContainer = styled.section`
 const VideoContainer = styled.section`
 	background-color: #002433;
 	height: 100vh;
+	object-fit: fill;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -133,12 +134,70 @@ const SponsorsRow = styled.div`
     .LogoSpacing{
         margin:25px;
     }
+
+    @media screen and (max-width: 1150px) {
+
+        display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+        margin: 5px;
+
+        .LogoSpacing{
+            margin:10px;
+        }
+    }
+    
+     @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+
+        .LogoSpacing{
+            margin:10px;
+            width: 16vw;
+        }
+	}
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 10px;
+
+		.LogoSpacing {
+			margin: 10px;
+			width: 20vw;
+		}
+	}
+
+	@media screen and (max-width: 575px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 10px;
+
+		.LogoSpacing {
+			margin: 10px;
+			width: 24vw;
+		}
+	}
 `;
 
 const ProjectRow = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+    @media screen and (max-width: 1150px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+
+        
+        
+
 `;
 
 const ProjectCard = styled.div`
