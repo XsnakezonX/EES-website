@@ -12,6 +12,13 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 
+@media screen and (max-width: 1150px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+
+
 `;
 
 const IconsContainer = styled.div`

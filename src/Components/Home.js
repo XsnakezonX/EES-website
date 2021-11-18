@@ -141,12 +141,48 @@ const SponsorsRow = styled.div`
     .LogoSpacing{
         margin:25px;
     }
+
+    @media screen and (max-width: 1150px) {
+
+        display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+        margin: 5px;
+
+        .LogoSpacing{
+            margin:10px;
+        }
+    }
+    
+     @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+
+        .LogoSpacing{
+            margin:10px;
+            width: 13vw;
+        }
+        
+    
+    }
 `;
 
 const ProjectRow = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+    @media screen and (max-width: 1150px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+
+        
+        
+
 `;
 
 const ProjectCard = styled.div`
