@@ -2,7 +2,7 @@ import React from "react";
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
-
+import Projects from "./Projects";
 
 const LandingContainer = styled.section`
 	background-color: #002433;
@@ -15,56 +15,15 @@ const LandingContainer = styled.section`
 `;
 
 const VideoContainer = styled.section`
-	background-color: #002433;
-	height: 100vh;
-  
-    margin-left:0;
+background-color: #002433;
+height: 95vh;
+background-size: cover;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
-    @media screen and (max-width: 1315px) {
-        video {
-            padding-left: 5px;
-        width:97.5vw;
-        
-            
-        }
-      }
-    
-    @media screen and (max-width: 1250px) {
-        video {
-            padding-left: 2px;
-        width:96vw;
-        
-            
-        }
-      }
-    
-    
-      @media screen and (max-width: 650px) {
-        video {
-            
-        width: 90;
-        
-        }
-      } 
-    
-      @media screen and (max-width: 615px) {
-        video {
-            
-        width: 87;
-        
-        }
-      } 
-    
-      @media screen and (max-width: 540px) {
-        video {
-            
-        padding-left: 0;
-        width: 85vw;
-    
-        
-            
-        }
-      }
+
 `;
 
 const CallToActionContainer = styled.section`
@@ -276,6 +235,128 @@ const ProjectCard = styled.div`
 
 `;
 
+//Projects Section
+
+const Banner = styled.div`
+
+	margin-left: 200px;
+
+`;
+
+
+const BannerH1 = styled.h1`
+	font-family: 'Ubuntu', sans-serif, bold ;
+	font-style: bold;
+	color: #62b22f;
+	font-size: 70px;
+`;
+
+const BoxH1 = styled.h1`
+	font-family: 'Ubuntu', sans-serif, bold ;
+	font-style: bold;
+	font-size: 2vw;
+	color: #62b22f;
+`;
+
+const Boxp = styled.p`
+	font-family: 'Raleway', sans-serif, bold ;
+	font-style: bold;
+	font-size: 1.5vw;
+	color: #62b22f;
+`;
+
+const TreeContainer = styled.div`
+margin-bottom: 16.4vh;
+	
+`;
+
+const TreeImage = styled.img`
+	height: 2036px;
+
+	@media screen and (max-width: 992px) {
+		display: none;
+	  }
+`;
+
+const ViikotRight = styled.div` 
+	display: flex;
+    justify-content: center;
+	width: 295px;
+	margin-top: 0px;
+	font-size: 20px;
+	line-height: 175%;
+	font-weight: 400;
+	justify-content:center;
+	${'' /* align-items:center; */}
+	padding-right: 100px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-right: 0px;
+	  }
+`;
+
+const Viikot = styled.div` 
+    display:flex;
+	width: 295px;
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 175%;
+    font-weight: 400;
+	${'' /* align-items:center; */}
+	justify-content:center;
+	padding-left: 100px;
+	
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-left: 0px;
+	  }
+`;
+
+const Box = styled.div`
+display: block;
+
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+`;
+
+const Structure = styled.div`
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-direction: column;
+`;
+
+
+const Right = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-right: 0px;
+	  }
+`;
+
+const Left = styled.div`
+	display: flex;
+	padding-left: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-left: 0px;
+	  }
+`;
+
 const MapTitle = styled.div`
 color: white;
 margin-top: -40px;
@@ -305,7 +386,7 @@ function Home() {
 			<VideoContainer>
 				
 				
-				<video autoPlay muted loop>
+				<video autoPlay muted loop playsInline>
 					<source src="/Videos/CoverVideo.mp4" />
 				</video>
 			</VideoContainer>
@@ -384,6 +465,42 @@ function Home() {
 					</ProjectCard>
 				</ProjectRow>
 			</ProjectsContainer>
+
+			
+			<Box className='container-fluid'>
+				<Structure>
+					<Left className='row'>
+						<Viikot>
+							<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
+					<Left className='row'>
+						<Viikot>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
+					<Left className='row'>
+						<Viikot>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
+				</Structure>
+			</Box>
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">

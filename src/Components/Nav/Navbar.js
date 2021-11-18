@@ -29,19 +29,6 @@ const LogoDiv = styled.div`
 
     display: flex;
     align-items: center;
-    
-
-
-    &:hover {
-        div{
-            transition: all 0.3s linear;
-
-            &:nth-child(2) {
-                display: block;
-                transform: translateX(100%);
-            }
-        }
-    }
 `;
 
 const NavLogo = styled.div`
@@ -79,11 +66,6 @@ function Navbar() {
                             <img src="Logo_White_Transparent.png" alt="Logo" style={{width: '50px', marginLeft: '35px', marginTop: '10px'}} />
                         </NavLink>
                     </NavLogo>
-                    <BlogDiv>
-                    <NavLink style={{ backgroundColor: 'white', zIndex: '3' }} to="/blog">
-                            <h1>Blog</h1>
-                        </NavLink>
-                    </BlogDiv>
                     <BlogButton>
                         <NavLink to="/blog">
                             <h1>Blog</h1>
