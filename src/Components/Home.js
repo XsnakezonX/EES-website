@@ -16,7 +16,7 @@ const LandingContainer = styled.section`
 
 const VideoContainer = styled.section`
 	background-color: #002433;
-	height: 95vh;
+	height: 100vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -37,25 +37,23 @@ const CallToActionContainer = styled.section`
 const ProjectsContainer = styled.section`
 background-color: #002433;
 z-index: 0;
-height: 100vh;
+width: 100vw;
 margin-bottom: 100px;
 margin-top: 100px;
-background-size: cover;
 display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 
 button {
-    margin-top: 20px;
-    padding: 16px 40px;
+    margin-top: 2.74vh;
+    padding: 2.19vh 2.77vw;
     border: 2px solid #fff;
     border-radius: 39px;
     background: none;
     color: #fff;
-    font-size: 2rem;
-    width: 525px;
-    height: 75px;
+    font-size: 2.22vw;
+    width: 36.45vw;
     transition: background-color, color 0.3s ease-in;
 }
 
@@ -67,8 +65,8 @@ button:hover {
 `;
 
 const MapContainer = styled.section`
-	background-image: url(/MapSectionBg.svg);
-	height: 110vh;
+	background-image: url(/forum.png);
+	height: 80vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -99,25 +97,19 @@ const LandingTitle = styled.h1`
 const SectionTitle = styled.h1`
 color: white;
 font-weight: 200;
-font-size: 4rem;
+font-size: 3.8vw;
 line-height: 5.4rem;
 z-index: 2;
-
-div {
-    background-color: #00628C;
-    position: absolute;
-    width: 32rem;
-    height: 6rem;
-    z-index: -1;
-    margin-top: -190px;
-    margin-left: 835px;
-}
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `;
 
 const SectionText = styled.p`
 color: white;
 margin-top: -40px;
-font-size: 1.5rem;
+font-size: 1.6vw;
 line-height: 1.8rem;
 `;
 
@@ -157,37 +149,21 @@ const ProjectCard = styled.div`
 	margin-right: 50px;
 `;
 
-const Styles = styled.div`
+const MapTitle = styled.div`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
 
-    {
-        background-color: #F8F8F8;        
-    }
 
-    .row {
-        min-height: 64vh;        
-    }
+`;
 
-    .card {
-        width: 12rem;
-        position: relative;
-        top: 25vh;
-        left: 15vh;
-        border: 0;
-        border-radius: 0;
-    }
+const MapSubTitle = styled.p`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
 
-    .card-title {
-        position: absolute;
-        font-size: 3.5rem;
-        right: 0.75rem;
-        bottom: 2rem;
-    }
-
-    .card-text {
-        padding-top: 1rem;
-        font-size: 0.75rem;
-    }
-    
 `;
 
 //Projects Section
@@ -305,6 +281,9 @@ const Left = styled.div`
 
 
 
+
+
+
 function Home() {
 
 	return (
@@ -322,7 +301,6 @@ function Home() {
 			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
 					<h1>We Are Exeter Entrepreneurs</h1>
-					<div></div>
 				</SectionTitle>
 
 				<SectionText>
@@ -496,12 +474,15 @@ function Home() {
 				</SectionTitle>
 				<Styles>
 
-					<Row className="blue-background">
-						<iframe title="map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
-					</Row>
-				</Styles>
+                <MapTitle>
+                    <h1>Location</h1>
+                    <p>We are located at Exeter’s University Campus</p>
+                </MapTitle>
+               
 
-			</MapContainer>
+              
+                <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
+                
 
 
 		</>
