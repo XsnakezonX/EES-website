@@ -17,6 +17,7 @@ const LandingContainer = styled.section`
 const VideoContainer = styled.section`
 	background-color: #002433;
 	height: 100vh;
+	object-fit: fill;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
