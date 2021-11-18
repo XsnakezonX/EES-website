@@ -230,6 +230,11 @@ const ViikotRight = styled.div`
 	justify-content:center;
 	${'' /* align-items:center; */}
 	padding-right: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-right: 0px;
+	  }
 `;
 
 const Viikot = styled.div` 
@@ -242,6 +247,11 @@ const Viikot = styled.div`
 	${'' /* align-items:center; */}
 	justify-content:center;
 	padding-left: 120px;
+	
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-left: 0px;
+	  }
 `;
 
 const Box = styled.div`
