@@ -84,6 +84,7 @@ const SponsorContainer = styled.section`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+    margin-bottom: 15vh;
 `;
 
 const SocialsContainer = styled.section``;
@@ -335,7 +336,7 @@ function Home() {
                         <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
                     </SponsorsRow>
-					<a href="https://www.mozilla.org/en-US/" target="_blank">
+					{/* <a href="https://www.mozilla.org/en-US/" target="_blank">
 						Mozilla
 					</a>
 					
@@ -353,7 +354,7 @@ function Home() {
 					</a>
 					<a href="https://webwisemedia.co.uk/" target="_blank">
 						web wise media
-					</a>
+					</a> */}
 
 				</SponsorIcons>
 			</SponsorContainer>
