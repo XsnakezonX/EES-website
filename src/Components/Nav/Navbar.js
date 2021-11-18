@@ -55,6 +55,20 @@ const BlogDiv = styled.div`
     transition: all 0.3s linear;
 `;
 
+const BlogButton = styled.div`
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+
+    h1 {
+        color: white;
+    }
+`;
+
 function Navbar() {
     return (
         <>
@@ -70,6 +84,12 @@ function Navbar() {
                             <h1>Blog</h1>
                         </NavLink>
                     </BlogDiv>
+                    <BlogButton>
+                        <NavLink to="/blog">
+                            <h1>Blog</h1>
+                        </NavLink>
+                    </BlogButton>
+
                 </LogoDiv>
 
             </Nav>
