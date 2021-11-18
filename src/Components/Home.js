@@ -17,12 +17,54 @@ const LandingContainer = styled.section`
 const VideoContainer = styled.section`
 	background-color: #002433;
 	height: 100vh;
-	object-fit: fill;
-	background-size: cover;
-	display: flex !important;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  
+    margin-left:0;
+
+    @media screen and (max-width: 1315px) {
+        video {
+            padding-left: 5px;
+        width:97.5vw;
+        
+            
+        }
+      }
+    
+    @media screen and (max-width: 1250px) {
+        video {
+            padding-left: 2px;
+        width:96vw;
+        
+            
+        }
+      }
+    
+    
+      @media screen and (max-width: 650px) {
+        video {
+            
+        width: 90;
+        
+        }
+      } 
+    
+      @media screen and (max-width: 615px) {
+        video {
+            
+        width: 87;
+        
+        }
+      } 
+    
+      @media screen and (max-width: 540px) {
+        video {
+            
+        padding-left: 0;
+        width: 85vw;
+    
+        
+            
+        }
+      }
 `;
 
 const CallToActionContainer = styled.section`
@@ -38,7 +80,7 @@ const CallToActionContainer = styled.section`
 const ProjectsContainer = styled.section`
 background-color: #002433;
 z-index: 0;
-width: 100vw;
+
 margin-bottom: 100px;
 margin-top: 100px;
 display: flex !important;
@@ -135,6 +177,21 @@ const SponsorsRow = styled.div`
         margin:25px;
     }
 
+    
+    @media screen and (max-width: 1300px) {
+        
+        .LogoSpacing{
+            margin:10px;
+        }
+        
+        img {
+            
+            width: 20vw;
+            
+            
+        }
+      }
+
     @media screen and (max-width: 1150px) {
 
         display: flex;
@@ -146,6 +203,7 @@ const SponsorsRow = styled.div`
             margin:10px;
         }
     }
+
     
      @media screen and (max-width: 992px) {
         display: flex;
@@ -189,7 +247,7 @@ const ProjectRow = styled.div`
 	flex-direction: row;
 	justify-content: space-between;
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1230px) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -206,6 +264,16 @@ const ProjectCard = styled.div`
 	justify-content: space-around;
 	margin-left: 50px;
 	margin-right: 50px;
+
+    @media screen and (max-width: 1300px) {
+        img {
+            
+            width: 40vw;
+            
+            
+        }
+      }
+
 `;
 
 const MapTitle = styled.div`
@@ -232,12 +300,12 @@ line-height: 1.0rem;
 function Home() {
     
 	return (
-		<>
+		<> {/* Muted promotional video that plays on render and loops */}
 
-			<VideoContainer className="container-fluid">
-				{/* Muted promotional video that plays on render and loops */}
+			<VideoContainer>
 				
-				<video autoPlay muted loop playsInline>
+				
+				<video autoPlay muted loop>
 					<source src="/Videos/CoverVideo.mp4" />
 				</video>
 			</VideoContainer>
@@ -396,7 +464,7 @@ function Home() {
 				</SponsorIcons>
 			</SponsorContainer>
 
-                {/* <MapContainer className="container-fluid">
+                <MapContainer className="container-fluid">
 
                 <MapTitle>
                     <h1>Location</h1>
@@ -405,10 +473,10 @@ function Home() {
                
 
               
-                <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
+                <iframe title = "map" src="https://snazzymaps.com/embed/353429" className="MapDimensions" ></iframe>
                 
 
-                </MapContainer> */}
+                </MapContainer>
 
 			
 		</>
