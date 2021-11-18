@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 
 const LandingContainer = styled.section`
-	background-color: #00364d;
+	background-color: #002433;
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;
@@ -15,7 +15,7 @@ const LandingContainer = styled.section`
 `;
 
 const VideoContainer = styled.section`
-	background-color: #00364d;
+	background-color: #002433;
 	height: 95vh;
 	background-size: cover;
 	display: flex !important;
@@ -25,7 +25,7 @@ const VideoContainer = styled.section`
 `;
 
 const CallToActionContainer = styled.section`
-	background-color: #00364d;
+	background-color: #002433;
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;
@@ -35,7 +35,7 @@ const CallToActionContainer = styled.section`
 `;
 
 const ProjectsContainer = styled.section`
-background-color: #00364D;
+background-color: #002433;
 z-index: 0;
 height: 100vh;
 margin-bottom: 100px;
@@ -68,7 +68,7 @@ button:hover {
 
 const MapContainer = styled.section`
 	background-image: url(/forum.png);
-	height: 100vh;
+	height: 80vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -77,13 +77,14 @@ const MapContainer = styled.section`
 `;
 
 const SponsorContainer = styled.section`
-	background-color: #00364d;
+	background-color: #002433;
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+    margin-bottom: 15vh;
 `;
 
 const SocialsContainer = styled.section``;
@@ -131,10 +132,21 @@ const SponsorIcons = styled.div`
 	}
 `;
 
+const SponsorsRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+
+    .LogoSpacing{
+        margin:25px;
+    }
+`;
+
 const ProjectRow = styled.div`
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 `;
 
 const ProjectCard = styled.div`
@@ -152,7 +164,7 @@ function Home() {
 	return (
 		<>
 
-			<VideoContainer>
+			<VideoContainer className="container-fluid">
 				{/* Muted promotional video that plays on render and loops */}
 				
 				<video autoPlay muted loop playsInline>
@@ -161,7 +173,7 @@ function Home() {
 			</VideoContainer>
 			
 
-			<ProjectsContainer>
+			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
 					<h1>We Are Exeter Entrepreneurs</h1>
                     <div></div>
@@ -174,7 +186,7 @@ function Home() {
 				<button>Join our community</button>
 			</ProjectsContainer>
 
-			<ProjectsContainer>
+			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
 					<h1>Our Community Projects</h1>
 				</SectionTitle>
@@ -191,7 +203,7 @@ function Home() {
 					</p>
 				</SectionText>
 
-				<ProjectRow>
+				<ProjectRow className="row">
 					<ProjectCard>
 						<img
 							src="/ProjectPlaceHolder.svg"
@@ -213,7 +225,7 @@ function Home() {
 					</ProjectCard>
 				</ProjectRow>
 
-				<ProjectRow>
+				<ProjectRow className="row">
 					<ProjectCard>
 						<img
 							src="/ProjectPlaceHolder.svg"
@@ -236,12 +248,12 @@ function Home() {
 				</ProjectRow>
 			</ProjectsContainer>
 
-			<SponsorContainer>
-				<SectionTitle>
+			<SponsorContainer className="container-fluid">
+				<SectionTitle className="row">
 					<h1>Meet our Sponsors</h1>
 				</SectionTitle>
 
-				<SectionText>
+				<SectionText className="row">
 					<p>
 						Every member, every event, every pizza slice is free
 						because of these guys.
@@ -251,42 +263,53 @@ function Home() {
 				{/* clickable image Hyperlinks to sponsors websites */}
 
 				<SponsorIcons>
-					<a href="https://home.kpmg/uk/en/home.html" target="_blank">
-						<img src="/KPMG.svg" alt="Partner logo" />
-					</a>
+                    <SponsorsRow className="row">
+                        <a href="https://home.kpmg/uk/en/home.html" target="_blank">
+                            <img src="/KPMG.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://about.google/" target="_blank">
+                            <img src="/Google.svg" alt="Partner logo" className="LogoSpacing"/>
+                        </a>
+                        <a href="https://github.com/" target="_blank">
+                            <img src="/GitHub.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://www.ashurst.com/" target="_blank">
+                            <img src="/ashurst.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                    </SponsorsRow>
 
-					<a href="https://about.google/" target="_blank">
-						Google
+                    <SponsorsRow className="row">
+                        <a href="https://www.oaknorth.co.uk/" target="_blank">
+                            <img src="/OakNorth.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://www.db.com/" target="_blank">
+                            <img src="/DBank.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://aws.amazon.com/" target="_blank">
+                            <img src="/AWS.svg" alt="Partner logo"  className="LogoSpacing"/>
+                        </a>
+                        <a href="https://www.teachfirst.org.uk/" target="_blank">
+                            <img src="/TeachFirst.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                    </SponsorsRow>
+
+                    <SponsorsRow className="row">
+                    <a href="https://www.buzzfeed.com/uk " target="_blank">
+                        <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
-					<a href="https://about.google/" target="_blank">
-						GitHub
+                    <a href="https://business-school.exeter.ac.uk/" target="_blank">
+                         <img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
-					<a href="https://www.mozilla.org/en-US/" target="_blank">
+                    <a href="https://deliveroo.co.uk/" target="_blank">
+                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
+                    </SponsorsRow>
+					{/* <a href="https://www.mozilla.org/en-US/" target="_blank">
 						Mozilla
 					</a>
-					<a
-						href="https://business-school.exeter.ac.uk/"
-						target="_blank"
-					>
-						Exeter Business
-					</a>
+					
 					<a href="https://www.marshmclennan.com/" target="_blank">
 						Marsh and McLennan Companies{" "}
-					</a>
-					<a href="https://www.ashurst.com/" target="_blank">
-						Ashurt
-					</a>
-					<a href="https://www.oaknorth.co.uk/" target="_blank">
-						Oaknorth Bank
-					</a>
-					<a href="https://www.db.com/" target="_blank">
-						Deutsche Bank
-					</a>
-					<a href="https://aws.amazon.com/" target="_blank">
-						Amazon AWS
-					</a>
-					<a href="https://www.teachfirst.org.uk/" target="_blank">
-						teach first
 					</a>
 					<a href="https://www.altitudeads.com/" target="_blank">
 						altitude ads
@@ -297,16 +320,14 @@ function Home() {
 					<a href="https://deliveroo.co.uk/" target="_blank">
 						deliveroo
 					</a>
-					<a href="https://www.buzzfeed.com/uk " target="_blank">
-						buzzfeed
-					</a>
 					<a href="https://webwisemedia.co.uk/" target="_blank">
 						web wise media
-					</a>
+					</a> */}
+
 				</SponsorIcons>
 			</SponsorContainer>
 
-                <MapContainer>
+                <MapContainer className="container-fluid">
 
            
                     <h1>Location</h1>
