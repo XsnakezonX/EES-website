@@ -60,31 +60,33 @@ function Footer() {
 
             {/* clickable Icons to the Society's various social media */}
             <IconsContainer>
-                <a href="https://www.linkedin.com/company/exeterentrepreneurs/about/" target="_blank">
-                    <IconAnimation>
-                        <img src="/linkedin.svg" alt="Social Media logo" className="IddleIcon" />
-                    </IconAnimation>
-                </a>
-                <a href="https://www.facebook.com/ExeterEntrepreneurs" target="_blank">
-                    <IconAnimation>
-                        <img src="/facebook.svg" alt="Social Media logo" className="IddleIcon" />
-                    </IconAnimation>
-                </a>
-                <a href="https://www.instagram.com/exeter_entrepreneurs/" target="_blank">
-                    <IconAnimation>
-                        <img src="/insta.svg" alt="Social Media logo" className="IddleIcon" />
-                    </IconAnimation>                
-                </a>
-                <a href="https://twitter.com/EEUniSociety" target="_blank">
-                    <IconAnimation>
-                        <img src="/twitter.svg" alt="Social Media logo" className="IddleIcon" />
-                    </IconAnimation>
-                </a>
-                <a href="mailto:hello@exeterentrepreneurs.com" target="_blank">
-                    <IconAnimation>
-                        <img src="/gmail.svg" alt="Social Media logo" className="IddleIcon" />
-                    </IconAnimation>
-                </a>
+                <IconAnimation>
+                    <a href="https://www.linkedin.com/company/exeterentrepreneurs/about/" target="_blank">
+
+                            <img src="/linkedin.svg" alt="Social Media logo" className="IddleIcon" />
+                        
+                    </a>
+                    <a href="https://www.facebook.com/ExeterEntrepreneurs" target="_blank">
+                        
+                            <img src="/facebook.svg" alt="Social Media logo" className="IddleIcon" />
+                        
+                    </a>
+                    <a href="https://www.instagram.com/exeter_entrepreneurs/" target="_blank">
+                        
+                            <img src="/insta.svg" alt="Social Media logo" className="IddleIcon" />
+                                    
+                    </a>
+                    <a href="https://twitter.com/EEUniSociety" target="_blank">
+                        
+                            <img src="/twitter.svg" alt="Social Media logo" className="IddleIcon" />
+                        
+                    </a>
+                    <a href="mailto:hello@exeterentrepreneurs.com" target="_blank">
+                    
+                            <img src="/gmail.svg" alt="Social Media logo" className="IddleIcon" />
+                        
+                    </a>
+                </IconAnimation>
             </IconsContainer>
         </SocialsContainer>
     );

@@ -252,11 +252,18 @@ function Home() {
 					</a>
 
 					<a href="https://about.google/" target="_blank">
-						Google
+                        <img src="/Google.svg" alt="Partner logo" />
 					</a>
-					<a href="https://about.google/" target="_blank">
-						GitHub
+					<a href="https://github.com/" target="_blank">
+                        <img src="/GitHub.svg" alt="Partner logo" />
 					</a>
+                    <a href="https://www.ashurst.com/" target="_blank">
+                        <img src="/ashurst.svg" alt="Partner logo" />
+					</a>
+                    <a href="https://www.oaknorth.co.uk/" target="_blank">
+                        <img src="/ashurst.svg" alt="Partner logo" />
+					</a>
+
 					<a href="https://www.mozilla.org/en-US/" target="_blank">
 						Mozilla
 					</a>
@@ -269,12 +276,8 @@ function Home() {
 					<a href="https://www.marshmclennan.com/" target="_blank">
 						Marsh and McLennan Companies{" "}
 					</a>
-					<a href="https://www.ashurst.com/" target="_blank">
-						Ashurt
-					</a>
-					<a href="https://www.oaknorth.co.uk/" target="_blank">
-						Oaknorth Bank
-					</a>
+					
+					
 					<a href="https://www.db.com/" target="_blank">
 						Deutsche Bank
 					</a>
