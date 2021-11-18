@@ -10,11 +10,13 @@ height: 15vh;
 display: flex !important;
 flex-direction: row;
 align-items: center;
-justify-content: space-around;
+justify-content: center;
+
 `;
 
 const IconsContainer = styled.div`
 background-color: #002433;
+width: 30vw;
 display: flex !important;
 flex-direction: row;
 align-items: center;
@@ -26,6 +28,7 @@ const FooterHeadline = styled.div`
 color: white;
 font-size: 43px;
 margin-bottom: 5px;
+margin-right: 5vw;
 
 p{
     margin: 0;
@@ -65,45 +68,39 @@ function Footer() {
             {/* clickable Icons to the Society's various social media */}
             <IconAnimation>
                 <IconsContainer>
-                    <div>
+                    
                         <a href="https://www.linkedin.com/company/exeterentrepreneurs/about/" target="_blank">
 
                                 <img src="/linkedin.svg" alt="Social Media logo" className="IddleIcon" />
                             
                         </a>
-                    </div>
                     
-                    <div>
                         <a href="https://www.facebook.com/ExeterEntrepreneurs" target="_blank">
                             
                                 <img src="/facebook.svg" alt="Social Media logo" className="IddleIcon" />
                             
                         </a>
-                    </div>
+                    
 
-                    <div>
+                    
                         <a href="https://www.instagram.com/exeter_entrepreneurs/" target="_blank">
                             
                                 <img src="/insta.svg" alt="Social Media logo" className="IddleIcon" />
                                         
                         </a>
-                    </div>
-
-                    <div>
+                    
                         <a href="https://twitter.com/EEUniSociety" target="_blank">
                             
                                 <img src="/twitter.svg" alt="Social Media logo" className="IddleIcon" />
                             
                         </a>
-                    </div>
-
-                    <div>
+                    
                         <a href="mailto:hello@exeterentrepreneurs.com" target="_blank">
                         
                                 <img src="/gmail.svg" alt="Social Media logo" className="IddleIcon" />
                             
                         </a>
-                    </div>
+                    
                 </IconsContainer>
             </IconAnimation>
         </SocialsContainer>
