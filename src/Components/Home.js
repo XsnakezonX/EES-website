@@ -164,7 +164,7 @@ function Home() {
 				{/* Muted promotional video that plays on render and loops */}
 				
 				<video autoPlay muted loop>
-					<source src="CoverVideo.mp4" />
+					<source src="/Videos/CoverVideo.mp4" />
 				</video>
 			</VideoContainer>
 			
