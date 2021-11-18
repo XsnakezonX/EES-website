@@ -157,6 +157,25 @@ const ProjectCard = styled.div`
 	margin-right: 50px;
 `;
 
+const MapTitle = styled.div`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
+
+
+`;
+
+const MapSubTitle = styled.p`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
+
+`;
+
+
+
 
 
 function Home() {
@@ -329,9 +348,10 @@ function Home() {
 
                 <MapContainer className="container-fluid">
 
-           
+                <MapTitle>
                     <h1>Location</h1>
-             
+                    <p>We are located at Exeter’s University Campus</p>
+                </MapTitle>
                
 
               
