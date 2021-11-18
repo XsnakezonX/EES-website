@@ -1,7 +1,8 @@
 import React from "react";
+import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
-import Navbar from "./Nav/Navbar";
-import RightNavbar from "./Nav/RightNavBar";
+
 
 const LandingContainer = styled.section`
 	background-color: #00364d;
@@ -144,7 +145,42 @@ const ProjectCard = styled.div`
 	margin-right: 50px;
 `;
 
+const Styles = styled.div`
+
+    {
+        background-color: #F8F8F8;        
+    }
+
+    .row {
+        min-height: 64vh;        
+    }
+
+    .card {
+        width: 12rem;
+        position: relative;
+        top: 25vh;
+        left: 15vh;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .card-title {
+        position: absolute;
+        font-size: 3.5rem;
+        right: 0.75rem;
+        bottom: 2rem;
+    }
+
+    .card-text {
+        padding-top: 1rem;
+        font-size: 0.75rem;
+    }
+    
+`;
+
+
 function Home() {
+    
 	return (
 		<>
 
@@ -305,11 +341,19 @@ function Home() {
 				</SponsorIcons>
 			</SponsorContainer>
 
-			<MapContainer>
-				<SectionTitle>
-					<h1>Map</h1>
-				</SectionTitle>
-			</MapContainer>
+                <MapContainer>
+
+                <SectionTitle>
+                    <h1>Map</h1>
+                </SectionTitle>
+                <Styles>
+
+                <Row className="blue-background">
+                <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
+                </Row>
+                </Styles>
+
+                </MapContainer>
 
 			
 		</>
