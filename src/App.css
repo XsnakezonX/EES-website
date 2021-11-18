@@ -40,8 +40,9 @@
 video {
 	min-height: 100%;
 	min-width: 100%;
+	object-fit: fill;
 	margin-top: -6%;
-	object-fit: cover;
+	position: relative;
 	padding-bottom: 2%;
 }
 
@@ -53,3 +54,47 @@ body {
   font-family: lato;
   src: url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
 }
+
+
+
+
+/*  Responsive design screen breakpoints
+@media screen and (max-width: 1150px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-width: 992px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-width: 768px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-width: 575px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  } */

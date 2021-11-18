@@ -16,7 +16,8 @@ const LandingContainer = styled.section`
 
 const VideoContainer = styled.section`
 	background-color: #002433;
-	height: 95vh;
+	height: 100vh;
+	object-fit: fill;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -37,25 +38,23 @@ const CallToActionContainer = styled.section`
 const ProjectsContainer = styled.section`
 background-color: #002433;
 z-index: 0;
-height: 100vh;
+width: 100vw;
 margin-bottom: 100px;
 margin-top: 100px;
-background-size: cover;
 display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 
 button {
-    margin-top: 20px;
-    padding: 16px 40px;
+    margin-top: 2.74vh;
+    padding: 2.19vh 2.77vw;
     border: 2px solid #fff;
     border-radius: 39px;
     background: none;
     color: #fff;
-    font-size: 2rem;
-    width: 525px;
-    height: 75px;
+    font-size: 2.22vw;
+    width: 36.45vw;
     transition: background-color, color 0.3s ease-in;
 }
 
@@ -99,31 +98,25 @@ const LandingTitle = styled.h1`
 const SectionTitle = styled.h1`
 color: white;
 font-weight: 200;
-font-size: 4rem;
+font-size: 3.8vw;
 line-height: 5.4rem;
 z-index: 2;
-
-div {
-    background-color: #00628C;
-    position: absolute;
-    width: 32rem;
-    height: 6rem;
-    z-index: -1;
-    margin-top: -190px;
-    margin-left: 835px;
-}
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `;
 
 const SectionText = styled.p`
 color: white;
 margin-top: -40px;
-font-size: 1.5rem;
+font-size: 1.6vw;
 line-height: 1.8rem;
 `;
 
 const SponsorIcons = styled.div`
 	img {
-		filter: brightness(65%);
+		filter: brightness(40%);
 		transition: 0.5s;
 	}
 
@@ -141,12 +134,70 @@ const SponsorsRow = styled.div`
     .LogoSpacing{
         margin:25px;
     }
+
+    @media screen and (max-width: 1150px) {
+
+        display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+        margin: 5px;
+
+        .LogoSpacing{
+            margin:10px;
+        }
+    }
+    
+     @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+
+        .LogoSpacing{
+            margin:10px;
+            width: 16vw;
+        }
+	}
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 10px;
+
+		.LogoSpacing {
+			margin: 10px;
+			width: 20vw;
+		}
+	}
+
+	@media screen and (max-width: 575px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 10px;
+
+		.LogoSpacing {
+			margin: 10px;
+			width: 24vw;
+		}
+	}
 `;
 
 const ProjectRow = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+    @media screen and (max-width: 1150px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+
+        
+        
+
 `;
 
 const ProjectCard = styled.div`
@@ -156,6 +207,25 @@ const ProjectCard = styled.div`
 	margin-left: 50px;
 	margin-right: 50px;
 `;
+
+const MapTitle = styled.div`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
+
+
+`;
+
+const MapSubTitle = styled.p`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
+
+`;
+
+
 
 
 
@@ -176,7 +246,6 @@ function Home() {
 			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
 					<h1>We Are Exeter Entrepreneurs</h1>
-                    <div></div>
 				</SectionTitle>
 
 				<SectionText>
@@ -329,9 +398,10 @@ function Home() {
 
                 <MapContainer className="container-fluid">
 
-           
+                <MapTitle>
                     <h1>Location</h1>
-             
+                    <p>We are located at Exeter’s University Campus</p>
+                </MapTitle>
                
 
               
