@@ -229,7 +229,7 @@ const ViikotRight = styled.div`
 	font-weight: 400;
 	justify-content:center;
 	${'' /* align-items:center; */}
-	padding-right: 120px;
+	padding-right: 100px;
 
 	@media screen and (max-width: 992px) {
 		justify-content: center;
@@ -246,7 +246,7 @@ const Viikot = styled.div`
     font-weight: 400;
 	${'' /* align-items:center; */}
 	justify-content:center;
-	padding-left: 120px;
+	padding-left: 100px;
 	
 	@media screen and (max-width: 992px) {
 		justify-content: center;
@@ -350,7 +350,7 @@ function Home() {
 				<Structure>
 					<Left className='row'>
 						<Viikot>
-							<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim. Maecenas blandit, nulla non cursus bibendum, augue dui pulvinar dui, sit amet pellentesque tortor lectus quis lorem. Ut elementum ultricies est eu vestibulum. Cras volutpat mattis efficitur. Duis venenatis libero ac tellus pulvinar aliquet. Nullam ornare fermentum massa vitae gravida. Duis rhoncus posuere interdum. Sed facilisis, tellus sit amet tempus aliquam, magna justo pretium dui, at auctor purus est vel nibh. Etiam quis bibendum ex. Quisque nec nulla fringilla, dignissim lorem sed, eleifend orci. Nam convallis porta purus vel condimentum. Aliquam blandit sit amet felis vitae sagittis. Mauris lorem nisl, dignissim a sodales quis, finibus a mi. Donec dignissim porta ex ut accumsan. '}></Projects>
+							<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
 						</Viikot>
 					</Left>
 					<Right className='row'>
