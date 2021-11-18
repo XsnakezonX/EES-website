@@ -28,6 +28,31 @@ font-size: 43px;
 line-height: 86px;
 `;
 
+const IconAnimation = styled.div`
+
+.IddleIcon {
+    opacity: 1;
+    z-index: 0;
+}
+
+.HoverIcon {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+
+&:hover IddleIcon {
+    opacity: 0;
+}
+
+&:hover HoverIcon {
+    opacity: 1;
+}
+
+
+
+`;
+
 function Footer() {
     return (
         
@@ -40,19 +65,22 @@ function Footer() {
             {/* clickable Icons to the Society's various social media */}
             <IconsContainer>
                 <a href="https://www.linkedin.com/company/exeterentrepreneurs/about/" target="_blank">
-                    <img src="/linkedin.png" alt="Social Media logo" />
+                    <IconAnimation>
+                        <img src="/linkedin.svg" alt="Social Media logo" className="IddleIcon" />
+                        <img src="/linkedinHover.png" alt="Social Media Logo" className="HoverIcon" />
+                    </IconAnimation>
                 </a>
                 <a href="https://www.facebook.com/ExeterEntrepreneurs" target="_blank">
-                    <img src="/facebook.png" alt="Social Media logo" />
+                    <img src="/facebookHover.png" alt="Social Media logo" />
                 </a>
                 <a href="https://www.instagram.com/exeter_entrepreneurs/" target="_blank">
-                    <img src="/insta.png" alt="Social Media logo" />
+                    <img src="/instaHover.png" alt="Social Media logo" />
                 </a>
                 <a href="https://twitter.com/EEUniSociety" target="_blank">
-                    <img src="/twitter.png" alt="Social Media logo" />
+                    <img src="/twitterHover.png" alt="Social Media logo" />
                 </a>
                 <a href="mailto:hello@exeterentrepreneurs.com" target="_blank">
-                    <img src="/gmail.png" alt="Social Media logo" />
+                    <img src="/gmailHover.png" alt="Social Media logo" />
                 </a>
             </IconsContainer>
         </SocialsContainer>
