@@ -116,7 +116,7 @@ line-height: 1.8rem;
 
 const SponsorIcons = styled.div`
 	img {
-		filter: brightness(65%);
+		filter: brightness(40%);
 		transition: 0.5s;
 	}
 
