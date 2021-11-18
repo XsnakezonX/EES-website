@@ -131,10 +131,21 @@ const SponsorIcons = styled.div`
 	}
 `;
 
+const SponsorsRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+
+    .LogoSpacing{
+        margin:25px;
+    }
+`;
+
 const ProjectRow = styled.div`
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 `;
 
 const ProjectCard = styled.div`
@@ -283,35 +294,41 @@ function Home() {
 				{/* clickable image Hyperlinks to sponsors websites */}
 
 				<SponsorIcons>
-					<a href="https://home.kpmg/uk/en/home.html" target="_blank">
-						<img src="/KPMG.svg" alt="Partner logo" />
-					</a>
+                    <SponsorsRow>
+                        <a href="https://home.kpmg/uk/en/home.html" target="_blank">
+                            <img src="/KPMG.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://about.google/" target="_blank">
+                            <img src="/Google.svg" alt="Partner logo" className="LogoSpacing"/>
+                        </a>
+                        <a href="https://github.com/" target="_blank">
+                            <img src="/GitHub.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://www.ashurst.com/" target="_blank">
+                            <img src="/ashurst.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                    </SponsorsRow>
 
-					<a href="https://about.google/" target="_blank">
-                        <img src="/Google.svg" alt="Partner logo" />
-					</a>
-					<a href="https://github.com/" target="_blank">
-                        <img src="/GitHub.svg" alt="Partner logo" />
-					</a>
-                    <a href="https://www.ashurst.com/" target="_blank">
-                        <img src="/ashurst.svg" alt="Partner logo" />
-					</a>
-                    <a href="https://www.oaknorth.co.uk/" target="_blank">
-                        <img src="/ashurst.svg" alt="Partner logo" />
-					</a>
-                    <a href="https://www.db.com/" target="_blank">
-                        <img src="/DBank.svg" alt="Partner logo" />
-					</a>
-                    <a href="https://aws.amazon.com/" target="_blank">
-                        <img src="/AWS.svg" alt="Partner logo" />
-					</a>
-                    <a href="https://www.teachfirst.org.uk/" target="_blank">
-                        <img src="/TeachFirst.svg" alt="Partner logo" />
-					</a>
+                    <SponsorsRow>
+                        <a href="https://www.oaknorth.co.uk/" target="_blank">
+                            <img src="/OakNorth.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://www.db.com/" target="_blank">
+                            <img src="/DBank.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://aws.amazon.com/" target="_blank">
+                            <img src="/AWS.svg" alt="Partner logo"  className="LogoSpacing"/>
+                        </a>
+                        <a href="https://www.teachfirst.org.uk/" target="_blank">
+                            <img src="/TeachFirst.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                    </SponsorsRow>
+
+                    <SponsorsRow>
                     <a href="https://www.buzzfeed.com/uk " target="_blank">
-                        <img src="/BuzzFeed.svg" alt="Partner logo" />
+                        <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
-
+                    </SponsorsRow>
 					<a href="https://www.mozilla.org/en-US/" target="_blank">
 						Mozilla
 					</a>
@@ -336,6 +353,7 @@ function Home() {
 					<a href="https://webwisemedia.co.uk/" target="_blank">
 						web wise media
 					</a>
+
 				</SponsorIcons>
 			</SponsorContainer>
 
