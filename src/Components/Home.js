@@ -67,7 +67,7 @@ button:hover {
 `;
 
 const MapContainer = styled.section`
-	background-image: url(/MapSectionBg.svg);
+	background-image: url(/forum.png);
 	height: 100vh;
 	background-size: cover;
 	display: flex !important;
@@ -145,38 +145,6 @@ const ProjectCard = styled.div`
 	margin-right: 50px;
 `;
 
-const Styles = styled.div`
-
-    {
-        background-color: #F8F8F8;        
-    }
-
-    .row {
-        min-height: 64vh;        
-    }
-
-    .card {
-        width: 12rem;
-        position: relative;
-        top: 25vh;
-        left: 15vh;
-        border: 0;
-        border-radius: 0;
-    }
-
-    .card-title {
-        position: absolute;
-        font-size: 3.5rem;
-        right: 0.75rem;
-        bottom: 2rem;
-    }
-
-    .card-text {
-        padding-top: 1rem;
-        font-size: 0.75rem;
-    }
-    
-`;
 
 
 function Home() {
@@ -340,15 +308,14 @@ function Home() {
 
                 <MapContainer>
 
-                <SectionTitle>
-                    <h1>Map</h1>
-                </SectionTitle>
-                <Styles>
+           
+                    <h1>Location</h1>
+             
+               
 
-                <Row className="blue-background">
+              
                 <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
-                </Row>
-                </Styles>
+                
 
                 </MapContainer>
 
