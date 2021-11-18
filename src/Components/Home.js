@@ -119,13 +119,6 @@ font-size: 1.5rem;
 line-height: 1.8rem;
 `;
 
-const SectionContent = styled.p`
-color: white;
-margin-top: -80px;
-font-size: 1.5rem;
-line-height: 1.8rem;
-`;
-
 const SponsorIcons = styled.div`
 	img {
 		filter: brightness(65%);
@@ -148,19 +141,7 @@ const SponsorsRow = styled.div`
     }
 `;
 
-const ProjectRow = styled.div`
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-`;
 
-const ProjectCard = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-left: 50px;
-	margin-right: 50px;
-`;
 
 const Styles = styled.div`
 
@@ -359,7 +340,7 @@ function Home() {
 				<Structure>
 					<Left className='row'>
 						<Viikot>
-							<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+							<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim. Maecenas blandit, nulla non cursus bibendum, augue dui pulvinar dui, sit amet pellentesque tortor lectus quis lorem. Ut elementum ultricies est eu vestibulum. Cras volutpat mattis efficitur. Duis venenatis libero ac tellus pulvinar aliquet. Nullam ornare fermentum massa vitae gravida. Duis rhoncus posuere interdum. Sed facilisis, tellus sit amet tempus aliquam, magna justo pretium dui, at auctor purus est vel nibh. Etiam quis bibendum ex. Quisque nec nulla fringilla, dignissim lorem sed, eleifend orci. Nam convallis porta purus vel condimentum. Aliquam blandit sit amet felis vitae sagittis. Mauris lorem nisl, dignissim a sodales quis, finibus a mi. Donec dignissim porta ex ut accumsan. '}></Projects>
 						</Viikot>
 					</Left>
 					<Right className='row'>

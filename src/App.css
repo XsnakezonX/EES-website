@@ -21,7 +21,7 @@
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: white;
+	color: white; 	
 }
 
 .App-link {
@@ -44,7 +44,65 @@ video {
 	margin-top: -6%;
 	position: relative;
 	padding-bottom: 2%;
+	
+
+	
 }
+
+
+@media screen and (max-width: 1775px) {
+	video {
+	width:98vw;
+	object-fit: fill;
+	margin-top: -6%;
+	position: relative;
+	padding-bottom: 2%;
+		
+	}
+  }
+
+
+@media screen and (max-width: 1150px) {
+	video {
+		
+		width: 98vw;
+		object-fit: contain;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-bottom: 2%;
+	
+		
+	}
+  }
+
+  @media screen and (max-width: 1070px) {
+	video {
+		
+		width: 96vw;
+		object-fit: contain;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-bottom: 2%;
+	
+		
+	}
+  }
+
+  @media screen and (max-width: 1150px) {
+	video {
+		
+		width: 98vw;
+		object-fit: contain;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-bottom: 2%;
+	
+		
+	}
+  }
 
 body {
   background-color: #002433;
@@ -54,3 +112,94 @@ body {
   font-family: lato;
   src: url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
 }
+
+
+
+
+/*  Responsive design screen breakpoints x axis */
+/*
+@media screen and (max-width: 1150px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-width: 992px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-width: 768px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-width: 575px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  } */
+
+
+
+
+  /*  Responsive design screen breakpoints y axis */
+/*Tablets*/
+/*
+@media screen and (max-height: 1080px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-height: 770px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-height: 670px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  }
+
+  @media screen and (max-height: 575px) {
+	.faq-button{
+		float: none;
+		margin-top: 0;
+		margin-left: 25%;
+		margin-right: 25%;
+
+	}
+  } */
