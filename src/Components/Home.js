@@ -51,8 +51,7 @@ align-items: center;
 justify-content: center;
 
 button {
-    margin-top: 2.74vh;
-    padding: 2.19vh 2.77vw;
+    padding: 2vh 2.77vw;
     border: 2px solid #fff;
     border-radius: 39px;
     background: none;
@@ -128,21 +127,20 @@ const SectionTitle = styled.h1`
 color: white;
 font-weight: 200;
 font-size: 3.8vw;
-line-height: 5.4rem;
+line-height: 1rem;
 z-index: 2;
 display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 
-
 `;
 
 const SectionText = styled.p`
 color: white;
 margin-top: -60px;
-margin-right: 8vw;
-margin-left: 8vw;
+margin-right: 12vw;
+margin-left: 12vw;
 margin-bottom: 80px;
 font-size: 1.4vw;
 text-align: center;
