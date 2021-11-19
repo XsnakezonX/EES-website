@@ -144,6 +144,13 @@ margin-left: 12vw;
 margin-bottom: 80px;
 font-size: 1.4vw;
 text-align: center;
+
+@media screen and (max-width: 850px) {
+	font-size: 14px;
+	margin-top: -30px;
+	margin-bottom: 50px;
+}
+
 `;
 
 const ProjectTitle = styled.p`
