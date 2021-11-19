@@ -140,6 +140,20 @@ font-size: 1.6vw;
 line-height: 1.8rem;
 `;
 
+const ProjectTitle = styled.p`
+color: white;
+margin-top: 10px;
+font-size: 2vw;
+line-height: 1.8rem;
+`;
+
+const ProjectText = styled.p`
+color: white;
+margin-top: 2px;
+font-size: 1.6vw;
+line-height: 1.8rem;
+`;
+
 const SponsorIcons = styled.div`
 	img {
 		filter: brightness(40%);
@@ -252,6 +266,10 @@ const ProjectCard = styled.div`
 	margin-left: 50px;
 	margin-right: 50px;
 
+	img{
+		width: 523px;
+	}
+
     @media screen and (max-width: 1300px) {
         img {
             
@@ -262,6 +280,9 @@ const ProjectCard = styled.div`
       }
 
 `;
+
+
+
 
 //Projects Section
 
@@ -455,9 +476,12 @@ function Home() {
 							src="/ProjectPlaceHolder.svg"
 							alt="Project Thumbnail"
 						/>
-						<SectionText>
+						<ProjectTitle>
 							<p>Project</p>
-						</SectionText>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
 					</ProjectCard>
 
 					<ProjectCard>
@@ -465,9 +489,12 @@ function Home() {
 							src="/ProjectPlaceHolder.svg"
 							alt="Project Thumbnail"
 						/>
-						<SectionText>
+						<ProjectTitle>
 							<p>Project</p>
-						</SectionText>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
 
@@ -477,9 +504,12 @@ function Home() {
 							src="/ProjectPlaceHolder.svg"
 							alt="Project Thumbnail"
 						/>
-						<SectionText>
+						<ProjectTitle>
 							<p>Project</p>
-						</SectionText>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
 					</ProjectCard>
 
 					<ProjectCard>
@@ -487,9 +517,12 @@ function Home() {
 							src="/ProjectPlaceHolder.svg"
 							alt="Project Thumbnail"
 						/>
-						<SectionText>
+						<ProjectTitle>
 							<p>Project</p>
-						</SectionText>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
 			</ProjectsContainer>

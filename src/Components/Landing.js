@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = styled.section`
 	background-color: #00121A;
@@ -182,16 +182,16 @@ function Landing() {
 	const [switchValue, setSwitchValue] = useState(false);
 	const [flickerClass, setFlickerClass] = useState("");
 
-	// const history = useHistory();
+	let navigate = useNavigate();
 
 	const handleSwitch = () => {
 		if(switchValue === false){
 			setSwitchImage("/Switch OFF.svg");
 			setFlickerClass("flicker-text");
 			setSwitchValue(true);
-			// setTimeout(() => {
-			// 	history.push("/");
-			// }, 4000);
+			setTimeout(() => {
+				navigate("/");
+			}, 4000);
 		} else {
 			setSwitchImage("/Switch ON.svg");
 			setFlickerClass("");
