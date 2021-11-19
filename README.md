@@ -22,34 +22,34 @@ A live version of this repository can be found in the following link:
 React | React-Router-Dom-V6 | JavaScript | HTML | CSS | SASS | Netlify | Styled Components | Bootstrap | Snazzy Maps | Google Maps API
 
 
-# Contacts
+# Made by
 
-## João Prates
+João Prates
 email: 
 <br>
 linkedIn: 
 
-## Michael Dixon
+Michael Dixon
 email: 
 <br>
 linkedIn: 
 
-## Nuno Gonçalves
+Nuno Gonçalves
 email: 
 <br>
 linkedIn: https://www.linkedin.com/
 
-## Paulo Santos
+Paulo Santos
 email: paulo.jorge.ngs@gmail.com
 <br>
 linkedIn: www.linkedin.com/in/paulo-j-santos
 
-## Tiago Silva
+Tiago Silva
 email: 
 <br>
 linkedIn: https://www.linkedin.com/
 
-## Zach Dive
+Zach Dive
 email: zj
 <br>
 linkedIn: www.linkedin.com/
