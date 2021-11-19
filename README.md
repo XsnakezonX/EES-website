@@ -1,15 +1,19 @@
 # Exeter's Entrepeneurs
 
-<img src=/Documentation.png alt="A gif of the website's landing page" />
-
+<p align="center">
+  <img src="DocumentationGif.GIF" alt="A gif of the website's landing page" />
+</p>
+  
 # Description
-A Rebranding of the Exeter's Entrepeneur's Website
+A Rebranding of the Exeter's Entrepeneur's Website.
 
 
 # Live Demo
-The final version of this Express based full-stack app 
-is in the following link:
+A live version of this repository can be found in the following link:
 
+<br>
+
+--- Insert Link ---
 
 
 
