@@ -30,47 +30,44 @@ The final version of this Express based full-stack app
 is in the following link:
 https://highnoontimetracker.netlify.app/
 
-# Known Issues
-When editing existing tasks/skills/habits the web app takes an unsually long time to respond.
-Apologies this issue will be fixed in a later version.
+
 
 # Technologies
-Technologies
-React | NodeJS | Axios | Express | JavaScript | Bootstrap | HTML | CSS | Netlify | Heroku |
-Chartjs | react-chartjs | react-simple-chatbot | MERN Stack
+
+React | React-Router-Dom-V6 | JavaScript | HTML | CSS | SASS | Netlify | Styled Components | Bootstrap | Snazzy Maps | Google Maps API
 
 
 # Contacts
 
 ## João Prates
-email: Greg_marklew@hotmail.com
+email: 
 <br>
-linkedIn: https://www.linkedin.com/in/gregory-marklew/
+linkedIn: 
 
 ## Michael Dixon
-email: Greg_marklew@hotmail.com
+email: 
 <br>
-linkedIn: https://www.linkedin.com/in/gregory-marklew/
+linkedIn: 
 
 ## Nuno Gonçalves
-email: Greg_marklew@hotmail.com
+email: 
 <br>
-linkedIn: https://www.linkedin.com/in/gregory-marklew/
+linkedIn: https://www.linkedin.com/
 
 ## Paulo Santos
-email: Greg_marklew@hotmail.com
-<br>
-linkedIn: https://www.linkedin.com/in/gregory-marklew/
-
-## Tiago Silva
-email: Greg_marklew@hotmail.com
-<br>
-linkedIn: https://www.linkedin.com/in/gregory-marklew/
-
-## Zach Dive
 email: paulo.jorge.ngs@gmail.com
 <br>
 linkedIn: www.linkedin.com/in/paulo-j-santos
+
+## Tiago Silva
+email: 
+<br>
+linkedIn: https://www.linkedin.com/
+
+## Zach Dive
+email: zj
+<br>
+linkedIn: www.linkedin.com/
 
 <br>
 <br>
