@@ -74,6 +74,16 @@ const MapContainer = styled.section`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@media screen and (max-height: 750px) {
+		background-image: url(/forum.png);
+		height: 900px;
+		
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+	}
 `;
 
 const SponsorContainer = styled.section`
@@ -85,9 +95,24 @@ const SponsorContainer = styled.section`
 	align-items: center;
 	justify-content: center;
     margin-bottom: 15vh;
+
+	@media screen and (max-height: 750px) {
+		background-color: #002433;
+		height: auto;
+		background-size: cover;
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 15vh;
+		
+	}
+
+	@media screen and (max-width: 992px) {
+        height: auto;
+	}
 `;
 
-const SocialsContainer = styled.section``;
 
 const LandingTitle = styled.h1`
 	color: white;
@@ -124,6 +149,7 @@ const SponsorIcons = styled.div`
 	img:hover {
 		filter: brightness(100%);
 	}
+
 `;
 
 const SponsorsRow = styled.div`
@@ -169,10 +195,12 @@ const SponsorsRow = styled.div`
         flex-direction: column;
         justify-content: space-between;
         margin: 10px;
+		
+	
 
         .LogoSpacing{
             margin:10px;
-            width: 16vw;
+            width: 45vw;
         }
 	}
 
@@ -465,7 +493,7 @@ function Home() {
 					</ProjectCard>
 				</ProjectRow>
 			</ProjectsContainer>
-
+{/* 
 			
 			<Box className='container-fluid'>
 				<Structure>
@@ -500,7 +528,7 @@ function Home() {
 						</ViikotRight>
 					</Right>
 				</Structure>
-			</Box>
+			</Box> */}
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">

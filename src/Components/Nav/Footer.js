@@ -17,7 +17,7 @@ justify-content: center;
     flex-direction: column;
     justify-content: center
     margin: 10px;
-
+}
 
 
     @media screen and (max-width: 768px) {
@@ -28,6 +28,11 @@ justify-content: center;
     
     
   }
+
+  @media screen and (max-height: 750px) {
+    height: 100%;
+    
+}
 `;
 
 const IconsContainer = styled.div`
