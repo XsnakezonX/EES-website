@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# High-Noon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src=/Documentation.png alt="LAnding Page for the High Noon Time Tracker web app" />
 
-## Available Scripts
+Made by Gregory Marklew and Paulo Santos.
 
-In the project directory, you can run:
+# Front End
+This repository holds all of the code relating to the front end portion of the app. to read about the back end portion access the following link:
+<br>
+https://github.com/Jorge-Neves/High-Noon-API
 
-### `npm start`
+# Description
+High Noon was the final project of the bootcamp and required us to put into practice all 
+we learned in the course of the 9 week curriculum. To do so we developed a MERN stack
+web application from scratch and we fully deployed it. High Noon is a productivity app
+that was designed with ADHD individuals in mind. This shows in the welcoming UI choices
+that don't overwhelm the user with information nor options.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Functionalities
 
-### `npm test`
+## CRUD
+The user is able to perform all CRUD operations on the tasks/skills/habits that he wishes to track.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Stats
+In order to have a visual representation of the user's progress when acecessing stats the user will be present with a doughnut diagram (for tasks and skills) and a list of dates for skills, so that they can then evaluate which areas need improving in their productivity journey.
 
-### `npm run build`
+# Live Demo
+The final version of this Express based full-stack app 
+is in the following link:
+https://highnoontimetracker.netlify.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Known Issues
+When editing existing tasks/skills/habits the web app takes an unsually long time to respond.
+Apologies this issue will be fixed in a later version.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Technologies
+Technologies
+React | NodeJS | Axios | Express | JavaScript | Bootstrap | HTML | CSS | Netlify | Heroku |
+Chartjs | react-chartjs | react-simple-chatbot | MERN Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Contacts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## João Prates
+email: Greg_marklew@hotmail.com
+<br>
+linkedIn: https://www.linkedin.com/in/gregory-marklew/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Michael Dixon
+email: Greg_marklew@hotmail.com
+<br>
+linkedIn: https://www.linkedin.com/in/gregory-marklew/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Nuno Gonçalves
+email: Greg_marklew@hotmail.com
+<br>
+linkedIn: https://www.linkedin.com/in/gregory-marklew/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Paulo Santos
+email: Greg_marklew@hotmail.com
+<br>
+linkedIn: https://www.linkedin.com/in/gregory-marklew/
 
-## Learn More
+## Tiago Silva
+email: Greg_marklew@hotmail.com
+<br>
+linkedIn: https://www.linkedin.com/in/gregory-marklew/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Zach Dive
+email: paulo.jorge.ngs@gmail.com
+<br>
+linkedIn: www.linkedin.com/in/paulo-j-santos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+<br>
