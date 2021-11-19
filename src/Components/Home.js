@@ -116,7 +116,7 @@ line-height: 1.8rem;
 
 const SponsorIcons = styled.div`
 	img {
-		filter: brightness(65%);
+		filter: brightness(40%);
 		transition: 0.5s;
 	}
 
@@ -396,7 +396,7 @@ function Home() {
 				</SponsorIcons>
 			</SponsorContainer>
 
-                <MapContainer className="container-fluid">
+                {/* <MapContainer className="container-fluid">
 
                 <MapTitle>
                     <h1>Location</h1>
@@ -408,7 +408,7 @@ function Home() {
                 <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
                 
 
-                </MapContainer>
+                </MapContainer> */}
 
 			
 		</>
