@@ -1,8 +1,9 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
-
+import Projects from "./Projects";
 
 const LandingContainer = styled.section`
 	background-color: #002433;
@@ -15,14 +16,15 @@ const LandingContainer = styled.section`
 `;
 
 const VideoContainer = styled.section`
-	background-color: #002433;
-	height: 100vh;
-	object-fit: fill;
-	background-size: cover;
-	display: flex !important;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+background-color: #002433;
+height: 95vh;
+background-size: cover;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
 `;
 
 const CallToActionContainer = styled.section`
@@ -38,7 +40,7 @@ const CallToActionContainer = styled.section`
 const ProjectsContainer = styled.section`
 background-color: #002433;
 z-index: 0;
-width: 100vw;
+
 margin-bottom: 100px;
 margin-top: 100px;
 display: flex !important;
@@ -135,6 +137,21 @@ const SponsorsRow = styled.div`
         margin:25px;
     }
 
+    
+    @media screen and (max-width: 1300px) {
+        
+        .LogoSpacing{
+            margin:10px;
+        }
+        
+        img {
+            
+            width: 20vw;
+            
+            
+        }
+      }
+
     @media screen and (max-width: 1150px) {
 
         display: flex;
@@ -146,6 +163,7 @@ const SponsorsRow = styled.div`
             margin:10px;
         }
     }
+
     
      @media screen and (max-width: 992px) {
         display: flex;
@@ -189,7 +207,7 @@ const ProjectRow = styled.div`
 	flex-direction: row;
 	justify-content: space-between;
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1230px) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -206,6 +224,138 @@ const ProjectCard = styled.div`
 	justify-content: space-around;
 	margin-left: 50px;
 	margin-right: 50px;
+
+    @media screen and (max-width: 1300px) {
+        img {
+            
+            width: 40vw;
+            
+            
+        }
+      }
+
+`;
+
+//Projects Section
+
+const Banner = styled.div`
+
+	margin-left: 200px;
+
+`;
+
+
+const BannerH1 = styled.h1`
+	font-family: 'Ubuntu', sans-serif, bold ;
+	font-style: bold;
+	color: #62b22f;
+	font-size: 70px;
+`;
+
+const BoxH1 = styled.h1`
+	font-family: 'Ubuntu', sans-serif, bold ;
+	font-style: bold;
+	font-size: 2vw;
+	color: #62b22f;
+`;
+
+const Boxp = styled.p`
+	font-family: 'Raleway', sans-serif, bold ;
+	font-style: bold;
+	font-size: 1.5vw;
+	color: #62b22f;
+`;
+
+const TreeContainer = styled.div`
+margin-bottom: 16.4vh;
+	
+`;
+
+const TreeImage = styled.img`
+	height: 2036px;
+
+	@media screen and (max-width: 992px) {
+		display: none;
+	  }
+`;
+
+const ViikotRight = styled.div` 
+	display: flex;
+    justify-content: center;
+	width: 295px;
+	margin-top: 0px;
+	font-size: 20px;
+	line-height: 175%;
+	font-weight: 400;
+	justify-content:center;
+	${'' /* align-items:center; */}
+	padding-right: 100px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-right: 0px;
+	  }
+`;
+
+const Viikot = styled.div` 
+    display:flex;
+	width: 295px;
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 175%;
+    font-weight: 400;
+	${'' /* align-items:center; */}
+	justify-content:center;
+	padding-left: 100px;
+	
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-left: 0px;
+	  }
+`;
+
+const Box = styled.div`
+display: block;
+
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+`;
+
+const Structure = styled.div`
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-direction: column;
+`;
+
+
+const Right = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-right: 0px;
+	  }
+`;
+
+const Left = styled.div`
+	display: flex;
+	padding-left: 120px;
+
+	@media screen and (max-width: 992px) {
+		justify-content: center;
+		padding-left: 0px;
+	  }
 `;
 
 const MapTitle = styled.div`
@@ -217,13 +367,7 @@ line-height: 1.0rem;
 
 `;
 
-const MapSubTitle = styled.p`
-color: white;
-margin-top: -40px;
-font-size: 1.0rem;
-line-height: 1.0rem;
 
-`;
 
 
 
@@ -232,10 +376,10 @@ line-height: 1.0rem;
 function Home() {
     
 	return (
-		<>
+		<> {/* Muted promotional video that plays on render and loops */}
 
-			<VideoContainer className="container-fluid">
-				{/* Muted promotional video that plays on render and loops */}
+			<VideoContainer>
+				
 				
 				<video autoPlay muted loop playsInline>
 					<source src="/Videos/CoverVideo.mp4" />
@@ -252,7 +396,7 @@ function Home() {
 					<p>Join the largest society on campus now, free.</p>
 				</SectionText>
 
-				<button>Join our community</button>
+				<Button>Join our community</Button>
 			</ProjectsContainer>
 
 			<ProjectsContainer className="container-fluid">
@@ -316,6 +460,42 @@ function Home() {
 					</ProjectCard>
 				</ProjectRow>
 			</ProjectsContainer>
+
+			
+			<Box className='container-fluid'>
+				<Structure>
+					<Left className='row'>
+						<Viikot>
+							<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
+					<Left className='row'>
+						<Viikot>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
+					<Left className='row'>
+						<Viikot>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</Viikot>
+					</Left>
+					<Right className='row'>
+						<ViikotRight>
+						<Projects projectTitle={'this is a title'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, nulla eget egestas consequat, dolor metus facilisis mauris, et accumsan lorem purus vel quam. Donec molestie neque tincidunt, viverra diam et, lacinia enim.'}></Projects>
+						</ViikotRight>
+					</Right>
+				</Structure>
+			</Box>
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">
@@ -396,7 +576,7 @@ function Home() {
 				</SponsorIcons>
 			</SponsorContainer>
 
-                {/* <MapContainer className="container-fluid">
+                <MapContainer className="container-fluid">
 
                 <MapTitle>
                     <h1>Location</h1>
@@ -405,10 +585,10 @@ function Home() {
                
 
               
-                <iframe title = "map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
+                <iframe title = "map" src="https://snazzymaps.com/embed/353429" className="MapDimensions" ></iframe>
                 
 
-                </MapContainer> */}
+                </MapContainer>
 
 			
 		</>

@@ -45,9 +45,11 @@ video {
 	position: relative;
 	padding-bottom: 2%;
 	
+	
 
 	
 }
+
 
 
 @media screen and (max-width: 1775px) {
@@ -113,6 +115,22 @@ body {
   src: url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
 }
 
+.MapDimensions{
+	width: 900px;
+	height: 300px;
+
+
+}
+
+@media screen and (max-width: 1130px) {
+	.MapDimensions {
+	
+	width:62vw;
+	height: 34vw;
+	
+		
+	}
+  }
 
 
 
