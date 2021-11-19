@@ -5,15 +5,15 @@ import Home from "./Components/Home";
 import Blog from "./Components/Blog";
 
 import Navbar from "./Components/Nav/Navbar";
-import RightNavbar from "./Components/Nav/RightNavBar";
+
 import Landing from "./Components/Landing";
 import Footer from "./Components/Nav/Footer";
 
 function App() {
 	return (
 		<>
-			<Navbar />
-			<RightNavbar />
+			{/* <Navbar /> */}
+			
 
 			<Routes>
 				<Route exact path="/landing" element={<Landing />} />

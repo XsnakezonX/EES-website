@@ -3,6 +3,8 @@ import Button from "react-bootstrap/Button";
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
+import Navbar from "./Nav/Navbar";
+
 import Projects from "./Projects";
 
 const LandingContainer = styled.section`
@@ -440,6 +442,8 @@ function Home() {
     
 	return (
 		<> {/* Muted promotional video that plays on render and loops */}
+
+		<Navbar/>
 
 			<VideoContainer>
 				
