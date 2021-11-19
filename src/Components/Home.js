@@ -1,7 +1,10 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
+import Navbar from "./Nav/Navbar";
+
 import Projects from "./Projects";
 import Fade from 'react-reveal/Fade';
 import { fadeOutEnabled } from "react-reveal/globals";
@@ -50,8 +53,7 @@ align-items: center;
 justify-content: center;
 
 button {
-    margin-top: 2.74vh;
-    padding: 2.19vh 2.77vw;
+    padding: 2vh 2.77vw;
     border: 2px solid #fff;
     border-radius: 39px;
     background: none;
@@ -127,21 +129,30 @@ const SectionTitle = styled.h1`
 color: white;
 font-weight: 200;
 font-size: 3.8vw;
-line-height: 5.4rem;
+line-height: 1rem;
 z-index: 2;
 display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 
-
 `;
 
 const SectionText = styled.p`
 color: white;
-margin-top: -40px;
-font-size: 1.6vw;
-line-height: 1.8rem;
+margin-top: -60px;
+margin-right: 12vw;
+margin-left: 12vw;
+margin-bottom: 80px;
+font-size: 1.4vw;
+text-align: center;
+
+@media screen and (max-width: 850px) {
+	font-size: 14px;
+	margin-top: -30px;
+	margin-bottom: 50px;
+}
+
 `;
 
 const ProjectTitle = styled.p`
@@ -428,13 +439,7 @@ line-height: 1.0rem;
 
 `;
 
-const MapSubTitle = styled.p`
-color: white;
-margin-top: -40px;
-font-size: 1.0rem;
-line-height: 1.0rem;
 
-`;
 
 
 
@@ -444,6 +449,8 @@ function Home() {
     
 	return (
 		<> {/* Muted promotional video that plays on render and loops */}
+
+		<Navbar/>
 
 			<VideoContainer>
 				
@@ -466,7 +473,7 @@ function Home() {
 					<p>Join the largest society on campus now, free.</p>
 				</SectionText>
 
-				<button>Join our community</button>
+				<Button>Join our community</Button>
 			</ProjectsContainer>
 
 			<ProjectsContainer className="container-fluid">
@@ -477,11 +484,9 @@ function Home() {
 				<SectionText>
 					<p>
 						Exeter Entrepreneurs are proud to have an exciting,
-						diverse range of events running throughout the
-					</p>
-					<p>
-						year. Be sure to check out what’s coming up next as well
-						as our past events here.Join the largest society on
+						diverse range of events running throughout the year. 
+						Be sure to check out what’s coming up next as well
+						as our past events here. Join the largest society on
 						campus now, free.
 					</p>
 				</SectionText>
@@ -493,10 +498,10 @@ function Home() {
 							alt="Project Thumbnail"
 						/>
 						<ProjectTitle>
-							<p>Project</p>
+							<p>ExCode</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -506,10 +511,10 @@ function Home() {
 							alt="Project Thumbnail"
 						/>
 						<ProjectTitle>
-							<p>Project</p>
+							<p>JunctionX</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
@@ -521,10 +526,10 @@ function Home() {
 							alt="Project Thumbnail"
 						/>
 						<ProjectTitle>
-							<p>Project</p>
+							<p>StartUp Café</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -534,10 +539,10 @@ function Home() {
 							alt="Project Thumbnail"
 						/>
 						<ProjectTitle>
-							<p>Project</p>
+							<p>The Grapevine</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>Nick & Louis' our former President & Vice-President’s take on the most interesting tech stories of the week with the Grapevine! Helping you discover the hottest startups and the latest technology trends, all in one simple email, once a week. 10,000+ subscribers and counting!</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
@@ -551,7 +556,7 @@ function Home() {
 							<p>Project</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -564,11 +569,13 @@ function Home() {
 							<p>Project</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
 			</ProjectsContainer>
+
+${'' /* 			
 {/* 
 			
 			<Box className='container-fluid'>
@@ -693,7 +700,7 @@ function Home() {
 
                 <MapTitle>
                     <h1>Location</h1>
-                    <p>We are located at Exeter’s University Campus</p>
+                    <p>We are based at the heart of campus</p>
                 </MapTitle>
                
 

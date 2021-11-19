@@ -63,7 +63,8 @@ function Navbar() {
                 <LogoDiv>
                     <NavLogo>
                         <NavLink style={{ zIndex: '3', position: 'fixed' }} to="/">
-                            <img src="Logo_White_Transparent.png" alt="Logo" className="navLogo" style={{ width: '35px', marginLeft: '3.5vw', marginTop: '1.4vw', backdropFilter: 'blur(8px)'}} />
+                            {/* <img src="Logo_White_Transparent.png" alt="Logo" style={{ width: '35px', marginLeft: '3.5vw', marginTop: '1.4vw', backdropFilter: 'blur(5px)'}} /> */}
+                            <img src="Mobile-Logo@2x.svg" alt="Mobile Logo" style={{width: '60px', marginLeft: '3.5vw', marginTop: '1.4vw', borderRadius: '40px', backdropFilter: 'blur(8px)'}} />
                         </NavLink>
                     </NavLogo>
                     <BlogButton>

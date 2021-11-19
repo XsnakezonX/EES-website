@@ -22,7 +22,7 @@ justify-content: center;
 
     @media screen and (max-width: 768px) {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center
         margin: 10px;
     
@@ -33,6 +33,7 @@ justify-content: center;
     height: 100%;
     
 }
+
 `;
 
 const IconsContainer = styled.div`
@@ -46,7 +47,7 @@ justify-content: space-between;
 
 @media screen and (max-width: 768px) {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center
         margin: 10px;
     
@@ -81,6 +82,12 @@ p{
     
 }
 
+@media screen and (max-height: 600px) {
+    flex-direction: row;
+
+    p {
+        padding-top: 35px;
+    }
 }
 `;
 
@@ -111,7 +118,7 @@ function Footer() {
         <SocialsContainer>
                
             <FooterHeadline>
-                <p>© Exeter Entrepreneurs 2021</p>
+            &copy; Exeter Entrepreneurs {new Date().getFullYear()}
             </FooterHeadline>
 
             {/* clickable Icons to the Society's various social media */}
