@@ -289,10 +289,7 @@ const ProjectCard = styled.div`
 	justify-content: space-around;
 	margin-left: 50px;
 	margin-right: 50px;
-
-	img{
-		width: 523px;
-	}
+	width: 523px;
 
     @media screen and (max-width: 1300px) {
         img {
@@ -491,6 +488,7 @@ function Home() {
 					</p>
 				</SectionText>
 
+				<div className='container-fluid'>
 				<ProjectRow className="row">
 					<ProjectCard>
 						<img
@@ -518,6 +516,7 @@ function Home() {
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
+				</div>
 
 				<ProjectRow className="row">
 					<ProjectCard>
