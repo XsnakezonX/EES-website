@@ -527,7 +527,7 @@ function Home() {
 							<p>The Grapevine</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Nick & Louis' are former President & Vice-President’s take on the most interesting tech stories of the week with the Grapevine! Helping you discover the hottest startups and the latest technology trends, all in one simple email, once a week. 10,000+ subscribers and counting!</p>
+							<p>Nick & Louis' our former President & Vice-President’s take on the most interesting tech stories of the week with the Grapevine! Helping you discover the hottest startups and the latest technology trends, all in one simple email, once a week. 10,000+ subscribers and counting!</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
@@ -647,11 +647,15 @@ ${'' /*
                     <a href="https://www.buzzfeed.com/uk " target="_blank">
                         <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
+					<a href="https://https://www.accenture.com/gb-en/" target="_blank">
+                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
                     <a href="https://business-school.exeter.ac.uk/" target="_blank">
                          <img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
-                    <a href="https://deliveroo.co.uk/" target="_blank">
-                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+                    
+                    <a href="https://exeter.gov.uk/" target="_blank">
+                        <img src="/Council.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
                     </SponsorsRow>
 					{/* <a href="https://www.mozilla.org/en-US/" target="_blank">
