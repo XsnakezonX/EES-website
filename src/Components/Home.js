@@ -650,11 +650,15 @@ function Home() {
                     <a href="https://www.buzzfeed.com/uk " target="_blank">
                         <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
+					<a href="https://https://www.accenture.com/gb-en/" target="_blank">
+                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
                     <a href="https://business-school.exeter.ac.uk/" target="_blank">
                          <img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
-                    <a href="https://deliveroo.co.uk/" target="_blank">
-                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+                    
+                    <a href="https://exeter.gov.uk/" target="_blank">
+                        <img src="/Council.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
                     </SponsorsRow>
 					{/* <a href="https://www.mozilla.org/en-US/" target="_blank">
