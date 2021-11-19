@@ -22,7 +22,7 @@ justify-content: center;
 
     @media screen and (max-width: 768px) {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center
         margin: 10px;
     
@@ -47,7 +47,7 @@ justify-content: space-between;
 
 @media screen and (max-width: 768px) {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center
         margin: 10px;
     
