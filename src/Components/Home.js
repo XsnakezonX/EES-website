@@ -496,7 +496,7 @@ function Home() {
 							<p>ExCode</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>blah</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -509,7 +509,7 @@ function Home() {
 							<p>JunctionX</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>blah</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
@@ -524,7 +524,7 @@ function Home() {
 							<p>StartUp Café</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>blah blah</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -551,7 +551,7 @@ function Home() {
 							<p>Project</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -564,7 +564,7 @@ function Home() {
 							<p>Project</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
