@@ -75,6 +75,16 @@ const MapContainer = styled.section`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@media screen and (max-height: 750px) {
+		background-image: url(/forum.png);
+		height: 900px;
+		
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+	}
 `;
 
 const SponsorContainer = styled.section`
@@ -86,9 +96,24 @@ const SponsorContainer = styled.section`
 	align-items: center;
 	justify-content: center;
     margin-bottom: 15vh;
+
+	@media screen and (max-height: 750px) {
+		background-color: #002433;
+		height: auto;
+		background-size: cover;
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 15vh;
+		
+	}
+
+	@media screen and (max-width: 992px) {
+        height: auto;
+	}
 `;
 
-const SocialsContainer = styled.section``;
 
 const LandingTitle = styled.h1`
 	color: white;
@@ -116,6 +141,20 @@ font-size: 1.6vw;
 line-height: 1.8rem;
 `;
 
+const ProjectTitle = styled.p`
+color: white;
+margin-top: 10px;
+font-size: 2vw;
+line-height: 1.8rem;
+`;
+
+const ProjectText = styled.p`
+color: white;
+margin-top: 2px;
+font-size: 1.6vw;
+line-height: 1.8rem;
+`;
+
 const SponsorIcons = styled.div`
 	img {
 		filter: brightness(40%);
@@ -125,6 +164,7 @@ const SponsorIcons = styled.div`
 	img:hover {
 		filter: brightness(100%);
 	}
+
 `;
 
 const SponsorsRow = styled.div`
@@ -170,10 +210,12 @@ const SponsorsRow = styled.div`
         flex-direction: column;
         justify-content: space-between;
         margin: 10px;
+		
+	
 
         .LogoSpacing{
             margin:10px;
-            width: 16vw;
+            width: 45vw;
         }
 	}
 
@@ -225,6 +267,10 @@ const ProjectCard = styled.div`
 	margin-left: 50px;
 	margin-right: 50px;
 
+	img{
+		width: 523px;
+	}
+
     @media screen and (max-width: 1300px) {
         img {
             
@@ -235,6 +281,9 @@ const ProjectCard = styled.div`
       }
 
 `;
+
+
+
 
 //Projects Section
 
@@ -422,9 +471,12 @@ function Home() {
 							src="/ProjectPlaceHolder.svg"
 							alt="Project Thumbnail"
 						/>
-						<SectionText>
-							<p>Project</p>
-						</SectionText>
+						<ProjectTitle>
+							<p>ExCode</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>blah</p>
+						</ProjectText>
 					</ProjectCard>
 
 					<ProjectCard>
@@ -432,9 +484,12 @@ function Home() {
 							src="/ProjectPlaceHolder.svg"
 							alt="Project Thumbnail"
 						/>
-						<SectionText>
-							<p>Project</p>
-						</SectionText>
+						<ProjectTitle>
+							<p>JunctionX</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>blah</p>
+						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
 
@@ -444,9 +499,12 @@ function Home() {
 							src="/ProjectPlaceHolder.svg"
 							alt="Project Thumbnail"
 						/>
-						<SectionText>
-							<p>Project</p>
-						</SectionText>
+						<ProjectTitle>
+							<p>StartUp Café</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>blah blah</p>
+						</ProjectText>
 					</ProjectCard>
 
 					<ProjectCard>
@@ -454,14 +512,19 @@ function Home() {
 							src="/ProjectPlaceHolder.svg"
 							alt="Project Thumbnail"
 						/>
-						<SectionText>
-							<p>Project</p>
-						</SectionText>
+						<ProjectTitle>
+							<p>The Grapevine</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>bruh</p>
+						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
 			</ProjectsContainer>
 
 ${'' /* 			
+{/* 
+			
 			<Box className='container-fluid'>
 				<Structure>
 					<Left className='row'>

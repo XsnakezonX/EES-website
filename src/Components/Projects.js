@@ -13,27 +13,22 @@ const ProjectCard = styled.div`
 
 const SectionText = styled.p`
 color: white;
-margin-top: -30px;
-font-size: 1.5rem;
+margin-top: -40px;
+font-size: 2vw;
 line-height: 1.8rem;
 `;
 
 const SectionContent = styled.p`
 color: white;
-margin-top: -70px;
-font-size: 1rem;
+margin-top: -40px;
+font-size: 1.6vw;
 line-height: 1.8rem;
 `;
 
 function Projects({projectTitle ,content}){
     return (
         <ProjectCard>
-							<div className='row'>
-								<img
-									src="/ProjectPlaceHolder.svg"
-									alt="Project Thumbnail"
-								/>
-								</div>
+							
 								<SectionText>
 									<p>{projectTitle}</p>
 								</SectionText>
