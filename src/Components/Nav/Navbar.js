@@ -63,7 +63,7 @@ function Navbar() {
                 <LogoDiv>
                     <NavLogo>
                         <NavLink style={{ zIndex: '3', position: 'fixed' }} to="/">
-                            <img src="Logo_White_Transparent.png" alt="Logo" style={{width: '50px', marginLeft: '35px', marginTop: '10px'}} />
+                            <img src="Logo_White_Transparent.png" alt="Logo" className="navLogo" style={{ width: '35px', marginLeft: '3.5vw', marginTop: '1.4vw', backdropFilter: 'blur(8px)'}} />
                         </NavLink>
                     </NavLogo>
                     <BlogButton>

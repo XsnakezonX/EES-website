@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
 import Projects from "./Projects";
-
+import Flip from 'react-reveal/Flip';
 
 const LandingContainer = styled.section`
 	background-color: #002433;
@@ -16,13 +16,15 @@ const LandingContainer = styled.section`
 `;
 
 const VideoContainer = styled.section`
-	background-color: #002433;
-	height: 95vh;
-	background-size: cover;
-	display: flex !important;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+background-color: #002433;
+height: 95vh;
+background-size: cover;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
 `;
 
 const CallToActionContainer = styled.section`
@@ -38,25 +40,23 @@ const CallToActionContainer = styled.section`
 const ProjectsContainer = styled.section`
 background-color: #002433;
 z-index: 0;
-height: 100vh;
+
 margin-bottom: 100px;
 margin-top: 100px;
-background-size: cover;
 display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 
 button {
-    margin-top: 20px;
-    padding: 16px 40px;
+    margin-top: 2.74vh;
+    padding: 2.19vh 2.77vw;
     border: 2px solid #fff;
     border-radius: 39px;
     background: none;
     color: #fff;
-    font-size: 2rem;
-    width: 525px;
-    height: 75px;
+    font-size: 2.22vw;
+    width: 36.45vw;
     transition: background-color, color 0.3s ease-in;
 }
 
@@ -68,13 +68,23 @@ button:hover {
 `;
 
 const MapContainer = styled.section`
-	background-image: url(/MapSectionBg.svg);
-	height: 110vh;
+	background-image: url(/forum.png);
+	height: 80vh;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@media screen and (max-height: 750px) {
+		background-image: url(/forum.png);
+		height: 900px;
+		
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+	}
 `;
 
 const SponsorContainer = styled.section`
@@ -86,9 +96,24 @@ const SponsorContainer = styled.section`
 	align-items: center;
 	justify-content: center;
     margin-bottom: 15vh;
+
+	@media screen and (max-height: 750px) {
+		background-color: #002433;
+		height: auto;
+		background-size: cover;
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 15vh;
+		
+	}
+
+	@media screen and (max-width: 992px) {
+        height: auto;
+	}
 `;
 
-const SocialsContainer = styled.section``;
 
 const LandingTitle = styled.h1`
 	color: white;
@@ -100,34 +125,57 @@ const LandingTitle = styled.h1`
 const SectionTitle = styled.h1`
 color: white;
 font-weight: 200;
-font-size: 4rem;
+font-size: 3.8vw;
 line-height: 5.4rem;
 z-index: 2;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
-div {
-    background-color: #00628C;
-    width: 32rem;
-    height: 6rem;
-    z-index: -1;
-}
+
 `;
 
 const SectionText = styled.p`
 color: white;
 margin-top: -40px;
-font-size: 1.5rem;
+font-size: 1.6vw;
 line-height: 1.8rem;
+`;
+
+const ProjectTitle = styled.p`
+color: white;
+margin-top: 10px;
+font-size: 2vw;
+line-height: 1.8rem;
+margin-bottom: 1vw;
+p{
+	margin-bottom: 0;
+}
+`;
+
+const ProjectText = styled.p`
+color: white;
+margin-top: 2px;
+font-size: 1.2vw;
+line-height: 1.8rem;
+
+
+p{
+	margin: 0;
+}
 `;
 
 const SponsorIcons = styled.div`
 	img {
-		filter: brightness(65%);
+		filter: brightness(40%);
 		transition: 0.5s;
 	}
 
 	img:hover {
 		filter: brightness(100%);
 	}
+
 `;
 
 const SponsorsRow = styled.div`
@@ -139,42 +187,114 @@ const SponsorsRow = styled.div`
     .LogoSpacing{
         margin:25px;
     }
-`;
 
-
-
-const Styles = styled.div`
-
-    {
-        background-color: #F8F8F8;        
-    }
-
-    .row {
-        min-height: 64vh;        
-    }
-
-    .card {
-        width: 12rem;
-        position: relative;
-        top: 25vh;
-        left: 15vh;
-        border: 0;
-        border-radius: 0;
-    }
-
-    .card-title {
-        position: absolute;
-        font-size: 3.5rem;
-        right: 0.75rem;
-        bottom: 2rem;
-    }
-
-    .card-text {
-        padding-top: 1rem;
-        font-size: 0.75rem;
-    }
     
+    @media screen and (max-width: 1300px) {
+        
+        .LogoSpacing{
+            margin:10px;
+        }
+        
+        img {
+            
+            width: 20vw;
+            
+            
+        }
+      }
+
+    @media screen and (max-width: 1150px) {
+
+        display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+        margin: 5px;
+
+        .LogoSpacing{
+            margin:10px;
+        }
+    }
+
+    
+     @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+		
+	
+
+        .LogoSpacing{
+            margin:10px;
+            width: 45vw;
+        }
+	}
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 10px;
+
+		.LogoSpacing {
+			margin: 10px;
+			width: 20vw;
+		}
+	}
+
+	@media screen and (max-width: 575px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 10px;
+
+		.LogoSpacing {
+			margin: 10px;
+			width: 24vw;
+		}
+	}
 `;
+
+const ProjectRow = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+    @media screen and (max-width: 1230px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+
+        
+        
+
+`;
+
+const ProjectCard = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 50px;
+	margin-right: 50px;
+
+	img{
+		width: 523px;
+	}
+
+    @media screen and (max-width: 1300px) {
+        img {
+            
+            width: 40vw;
+            
+            
+        }
+      }
+
+`;
+
+
+
 
 //Projects Section
 
@@ -298,29 +418,50 @@ const Left = styled.div`
 	  }
 `;
 
+const MapTitle = styled.div`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
+
+
+`;
+
+const MapSubTitle = styled.p`
+color: white;
+margin-top: -40px;
+font-size: 1.0rem;
+line-height: 1.0rem;
+
+`;
+
+
+
 
 
 function Home() {
-
+    
 	return (
-		<>
+		<> {/* Muted promotional video that plays on render and loops */}
 
-			<VideoContainer className="container-fluid">
-				{/* Muted promotional video that plays on render and loops */}
-
+			<VideoContainer>
+				
+				
 				<video autoPlay muted loop playsInline>
 					<source src="/Videos/CoverVideo.mp4" />
 				</video>
 			</VideoContainer>
-
+			
 
 			<ProjectsContainer className="container-fluid">
-				<SectionTitle className='row'>
+				<SectionTitle>
+					<Flip Left>
+						<img src='Logo_White_Transparent.png'/>
+					</Flip>
 					<h1>We Are Exeter Entrepreneurs</h1>
-					<div></div>
 				</SectionTitle>
 
-				<SectionText className='row'>
+				<SectionText>
 					<p>Join the largest society on campus now, free.</p>
 				</SectionText>
 
@@ -328,24 +469,107 @@ function Home() {
 			</ProjectsContainer>
 
 			<ProjectsContainer className="container-fluid">
-				<div className='row'>
-					<SectionTitle>
-						<h1>Our Community Projects</h1>
-					</SectionTitle>
+				<SectionTitle>
+					<h1>Our Community Projects</h1>
+				</SectionTitle>
 
-					<SectionText>
-						<p>
-							Exeter Entrepreneurs are proud to have an exciting,
-							diverse range of events running throughout the
-						</p>
-						<p>
-							year. Be sure to check out what’s coming up next as well
-							as our past events here.Join the largest society on
-							campus now, free.
-						</p>
-					</SectionText>
-				</div>
+				<SectionText>
+					<p>
+						Exeter Entrepreneurs are proud to have an exciting,
+						diverse range of events running throughout the
+					</p>
+					<p>
+						year. Be sure to check out what’s coming up next as well
+						as our past events here.Join the largest society on
+						campus now, free.
+					</p>
+				</SectionText>
+
+				<ProjectRow className="row">
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>Project</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
+					</ProjectCard>
+
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>Project</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
+					</ProjectCard>
+				</ProjectRow>
+
+				<ProjectRow className="row">
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>Project</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
+					</ProjectCard>
+
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>Project</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
+					</ProjectCard>
+				</ProjectRow>
+				<ProjectRow className="row">
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>Project</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
+					</ProjectCard>
+
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>Project</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
+					</ProjectCard>
+				</ProjectRow>
 			</ProjectsContainer>
+{/* 
+			
 			<Box className='container-fluid'>
 				<Structure>
 					<Left className='row'>
@@ -379,7 +603,7 @@ function Home() {
 						</ViikotRight>
 					</Right>
 				</Structure>
-			</Box>
+			</Box> */}
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">
@@ -396,47 +620,51 @@ function Home() {
 				{/* clickable image Hyperlinks to sponsors websites */}
 
 				<SponsorIcons>
-					<SponsorsRow className="row">
-						<a href="https://home.kpmg/uk/en/home.html" target="_blank">
-							<img src="/KPMG.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-						<a href="https://about.google/" target="_blank">
-							<img src="/Google.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-						<a href="https://github.com/" target="_blank">
-							<img src="/GitHub.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-						<a href="https://www.ashurst.com/" target="_blank">
-							<img src="/ashurst.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-					</SponsorsRow>
+                    <SponsorsRow className="row">
+                        <a href="https://home.kpmg/uk/en/home.html" target="_blank">
+                            <img src="/KPMG.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://about.google/" target="_blank">
+                            <img src="/Google.svg" alt="Partner logo" className="LogoSpacing"/>
+                        </a>
+                        <a href="https://github.com/" target="_blank">
+                            <img src="/GitHub.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://www.ashurst.com/" target="_blank">
+                            <img src="/ashurst.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                    </SponsorsRow>
 
-					<SponsorsRow className="row">
-						<a href="https://www.oaknorth.co.uk/" target="_blank">
-							<img src="/OakNorth.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-						<a href="https://www.db.com/" target="_blank">
-							<img src="/DBank.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-						<a href="https://aws.amazon.com/" target="_blank">
-							<img src="/AWS.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-						<a href="https://www.teachfirst.org.uk/" target="_blank">
-							<img src="/TeachFirst.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-					</SponsorsRow>
+                    <SponsorsRow className="row">
+                        <a href="https://www.oaknorth.co.uk/" target="_blank">
+                            <img src="/OakNorth.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://www.db.com/" target="_blank">
+                            <img src="/DBank.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                        <a href="https://aws.amazon.com/" target="_blank">
+                            <img src="/AWS.svg" alt="Partner logo"  className="LogoSpacing"/>
+                        </a>
+                        <a href="https://www.teachfirst.org.uk/" target="_blank">
+                            <img src="/TeachFirst.svg" alt="Partner logo" className="LogoSpacing" />
+                        </a>
+                    </SponsorsRow>
 
-					<SponsorsRow className="row">
-						<a href="https://www.buzzfeed.com/uk " target="_blank">
-							<img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-						<a href="https://business-school.exeter.ac.uk/" target="_blank">
-							<img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-						<a href="https://deliveroo.co.uk/" target="_blank">
-							<img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
-						</a>
-					</SponsorsRow>
+                    <SponsorsRow className="row">
+                    <a href="https://www.buzzfeed.com/uk " target="_blank">
+                        <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
+					<a href="https://https://www.accenture.com/gb-en/" target="_blank">
+                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
+                    <a href="https://business-school.exeter.ac.uk/" target="_blank">
+                         <img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
+                    
+                    <a href="https://exeter.gov.uk/" target="_blank">
+                        <img src="/Council.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
+                    </SponsorsRow>
 					{/* <a href="https://www.mozilla.org/en-US/" target="_blank">
 						Mozilla
 					</a>
@@ -460,21 +688,21 @@ function Home() {
 				</SponsorIcons>
 			</SponsorContainer>
 
-			<MapContainer className="container-fluid">
+                <MapContainer className="container-fluid">
 
-				<div className='row'>
-					<Row>
-					<SectionTitle>
-						<h1>Map</h1>
-					</SectionTitle>
-					</Row>
-					<Row className="blue-background">
-						<iframe title="map" src="https://snazzymaps.com/embed/353429" width="900px" height="300px" ></iframe>
-					</Row>
-				</div>
-			</MapContainer>
+                <MapTitle>
+                    <h1>Location</h1>
+                    <p>We are located at Exeter’s University Campus</p>
+                </MapTitle>
+               
 
+              
+                <iframe title = "map" src="https://snazzymaps.com/embed/353429" className="MapDimensions" ></iframe>
+                
 
+                </MapContainer>
+
+			
 		</>
 	);
 }

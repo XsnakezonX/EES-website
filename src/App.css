@@ -45,9 +45,11 @@ video {
 	position: relative;
 	padding-bottom: 2%;
 	
+	
 
 	
 }
+
 
 
 @media screen and (max-width: 1775px) {
@@ -104,6 +106,20 @@ video {
 	}
   }
 
+  @media screen and (max-width: 1150px) {
+	video {
+		
+		width: 96vw;
+		object-fit: contain;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-bottom: 2%;
+	
+		
+	}
+  }
+
 body {
   background-color: #002433;
 }
@@ -113,8 +129,22 @@ body {
   src: url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
 }
 
+.MapDimensions{
+	width: 900px;
+	height: 300px;
 
 
+}
+
+@media screen and (max-width: 1130px) {
+	.MapDimensions {
+	
+	width:90vw;
+	height: 30vw;
+	
+		
+	}
+  }
 
 /*  Responsive design screen breakpoints x axis */
 /*
