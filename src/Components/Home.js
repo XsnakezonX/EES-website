@@ -461,7 +461,7 @@ function Home() {
 				</ProjectRow>
 			</ProjectsContainer>
 
-			
+${'' /* 			
 			<Box className='container-fluid'>
 				<Structure>
 					<Left className='row'>
@@ -495,7 +495,7 @@ function Home() {
 						</ViikotRight>
 					</Right>
 				</Structure>
-			</Box>
+			</Box> */}
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">
