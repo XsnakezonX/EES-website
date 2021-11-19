@@ -132,6 +132,8 @@ display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
+
 `;
 
 const SectionText = styled.p`
@@ -146,13 +148,22 @@ color: white;
 margin-top: 10px;
 font-size: 2vw;
 line-height: 1.8rem;
+margin-bottom: 1vw;
+p{
+	margin-bottom: 0;
+}
 `;
 
 const ProjectText = styled.p`
 color: white;
 margin-top: 2px;
-font-size: 1.6vw;
+font-size: 1.2vw;
 line-height: 1.8rem;
+
+
+p{
+	margin: 0;
+}
 `;
 
 const SponsorIcons = styled.div`
@@ -516,7 +527,34 @@ function Home() {
 							<p>The Grapevine</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>bruh</p>
+							<p>Nick & Louis' are former President & Vice-President’s take on the most interesting tech stories of the week with the Grapevine! Helping you discover the hottest startups and the latest technology trends, all in one simple email, once a week. 10,000+ subscribers and counting!</p>
+						</ProjectText>
+					</ProjectCard>
+				</ProjectRow>
+				<ProjectRow className="row">
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>Project</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
+						</ProjectText>
+					</ProjectCard>
+
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>Project</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Project</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
