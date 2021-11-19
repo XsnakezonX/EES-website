@@ -5,13 +5,12 @@
 </p>
   
 # Description
-A Rebranding of the Exeter's Entrepeneur's Website
+A Rebranding of the Exeter's Entrepeneur's Website.
 
 
 # Live Demo
-The final version of this Express based full-stack app 
-is in the following link:
-
+A live version of this repository can be found in the following link:
+--- Insert Link ---
 
 
 
