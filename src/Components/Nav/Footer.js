@@ -118,7 +118,7 @@ function Footer() {
         <SocialsContainer>
                
             <FooterHeadline>
-                <p>© Exeter Entrepreneurs 2021</p>
+            &copy; Exeter Entrepreneurs {new Date().getFullYear()}
             </FooterHeadline>
 
             {/* clickable Icons to the Society's various social media */}

@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
@@ -131,6 +132,8 @@ display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
+
 `;
 
 const SectionText = styled.p`
@@ -148,13 +151,22 @@ color: white;
 margin-top: 10px;
 font-size: 2vw;
 line-height: 1.8rem;
+margin-bottom: 1vw;
+p{
+	margin-bottom: 0;
+}
 `;
 
 const ProjectText = styled.p`
 color: white;
 margin-top: 2px;
-font-size: 1.6vw;
+font-size: 1.2vw;
 line-height: 1.8rem;
+
+
+p{
+	margin: 0;
+}
 `;
 
 const SponsorIcons = styled.div`
@@ -418,13 +430,7 @@ line-height: 1.0rem;
 
 `;
 
-const MapSubTitle = styled.p`
-color: white;
-margin-top: -40px;
-font-size: 1.0rem;
-line-height: 1.0rem;
 
-`;
 
 
 
@@ -453,7 +459,7 @@ function Home() {
 					<p>Join the largest society on campus now, free.</p>
 				</SectionText>
 
-				<button>Join our community</button>
+				<Button>Join our community</Button>
 			</ProjectsContainer>
 
 			<ProjectsContainer className="container-fluid">
@@ -478,10 +484,10 @@ function Home() {
 							alt="Project Thumbnail"
 						/>
 						<ProjectTitle>
-							<p>Project</p>
+							<p>ExCode</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>blah</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -491,14 +497,41 @@ function Home() {
 							alt="Project Thumbnail"
 						/>
 						<ProjectTitle>
-							<p>Project</p>
+							<p>JunctionX</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Project</p>
+							<p>blah</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
 
+				<ProjectRow className="row">
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>StartUp Café</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>blah blah</p>
+						</ProjectText>
+					</ProjectCard>
+
+					<ProjectCard>
+						<img
+							src="/ProjectPlaceHolder.svg"
+							alt="Project Thumbnail"
+						/>
+						<ProjectTitle>
+							<p>The Grapevine</p>
+						</ProjectTitle>
+						<ProjectText>
+							<p>Nick & Louis' our former President & Vice-President’s take on the most interesting tech stories of the week with the Grapevine! Helping you discover the hottest startups and the latest technology trends, all in one simple email, once a week. 10,000+ subscribers and counting!</p>
+						</ProjectText>
+					</ProjectCard>
+				</ProjectRow>
 				<ProjectRow className="row">
 					<ProjectCard>
 						<img
@@ -527,6 +560,8 @@ function Home() {
 					</ProjectCard>
 				</ProjectRow>
 			</ProjectsContainer>
+
+${'' /* 			
 {/* 
 			
 			<Box className='container-fluid'>
@@ -613,11 +648,15 @@ function Home() {
                     <a href="https://www.buzzfeed.com/uk " target="_blank">
                         <img src="/BuzzFeed.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
+					<a href="https://https://www.accenture.com/gb-en/" target="_blank">
+                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+					</a>
                     <a href="https://business-school.exeter.ac.uk/" target="_blank">
                          <img src="/Exeter.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
-                    <a href="https://deliveroo.co.uk/" target="_blank">
-                        <img src="/accenture.svg" alt="Partner logo" className="LogoSpacing" />
+                    
+                    <a href="https://exeter.gov.uk/" target="_blank">
+                        <img src="/Council.svg" alt="Partner logo" className="LogoSpacing" />
 					</a>
                     </SponsorsRow>
 					{/* <a href="https://www.mozilla.org/en-US/" target="_blank">
@@ -647,7 +686,7 @@ function Home() {
 
                 <MapTitle>
                     <h1>Location</h1>
-                    <p>We are located at Exeter’s University Campus</p>
+                    <p>We are based at the heart of campus</p>
                 </MapTitle>
                
 
