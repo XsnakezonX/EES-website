@@ -33,6 +33,7 @@ justify-content: center;
     height: 100%;
     
 }
+
 `;
 
 const IconsContainer = styled.div`
@@ -81,6 +82,12 @@ p{
     
 }
 
+@media screen and (max-height: 600px) {
+    flex-direction: row;
+
+    p {
+        padding-top: 35px;
+    }
 }
 `;
 

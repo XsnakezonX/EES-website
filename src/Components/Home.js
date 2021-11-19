@@ -135,9 +135,12 @@ justify-content: center;
 
 const SectionText = styled.p`
 color: white;
-margin-top: -40px;
-font-size: 1.6vw;
-line-height: 1.8rem;
+margin-top: -60px;
+margin-right: 8vw;
+margin-left: 8vw;
+margin-bottom: 80px;
+font-size: 1.4vw;
+text-align: center;
 `;
 
 const ProjectTitle = styled.p`
@@ -461,11 +464,9 @@ function Home() {
 				<SectionText>
 					<p>
 						Exeter Entrepreneurs are proud to have an exciting,
-						diverse range of events running throughout the
-					</p>
-					<p>
-						year. Be sure to check out what’s coming up next as well
-						as our past events here.Join the largest society on
+						diverse range of events running throughout the year. 
+						Be sure to check out what’s coming up next as well
+						as our past events here. Join the largest society on
 						campus now, free.
 					</p>
 				</SectionText>
