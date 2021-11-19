@@ -3,7 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
 import Projects from "./Projects";
-import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
+import { fadeOutEnabled } from "react-reveal/globals";
 
 const LandingContainer = styled.section`
 	background-color: #002433;
@@ -455,9 +456,9 @@ function Home() {
 
 			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
-					<Flip Left>
+					<Fade>
 						<img src='Logo_White_Transparent.png'/>
-					</Flip>
+					</Fade>
 					<h1>We Are Exeter Entrepreneurs</h1>
 				</SectionTitle>
 
