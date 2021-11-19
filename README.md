@@ -1,7 +1,9 @@
 # Exeter's Entrepeneurs
 
-<img src="DocumentationGif.GIF" alt="A gif of the website's landing page" />
-
+<p align="center">
+  <img src="DocumentationGif.GIF" alt="A gif of the website's landing page" />
+</p>
+  
 # Description
 A Rebranding of the Exeter's Entrepeneur's Website
 
