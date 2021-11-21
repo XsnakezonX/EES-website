@@ -30,9 +30,9 @@ email:
 linkedIn: 
 
 Michael Dixon
-email: 
+email: michaelmail7@gmail.com
 <br>
-linkedIn: 
+linkedIn: https://www.linkedin.com/in/michael-dixon-404/
 
 Nuno Gonçalves
 email: 
