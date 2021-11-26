@@ -747,7 +747,7 @@ ${'' /*
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">
-					<h1>Meet our Sponsors</h1>
+					<h1 className="flickerText">Meet our Sponsors</h1>
 				</SectionTitle>
 
 				<SectionText className="row">
@@ -831,7 +831,7 @@ ${'' /*
                 <MapContainer className="container-fluid">
 
                 <MapTitle>
-                    <h1>Location</h1>
+                    <h1 className="flickerText">Location</h1>
                     <p>We are based at the heart of campus</p>
                 </MapTitle>
                
