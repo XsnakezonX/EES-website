@@ -831,7 +831,7 @@ ${'' /*
                 <MapContainer className="container-fluid">
 
                 <MapTitle>
-                    <h1 className="flickerText">Location</h1>
+                    <h1>Location</h1>
                     <p>We are based at the heart of campus</p>
                 </MapTitle>
                
