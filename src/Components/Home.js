@@ -135,6 +135,137 @@ display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+text-shadow: 0 0 6px #fff;
+
+.flickerText {
+  		animation: flicker 5s 0.3s infinite;
+	}
+
+	@keyframes flicker {
+		from {
+			opacity: 1;
+		}
+
+		4% {
+			opacity: 0.83;
+		}
+
+		6% {
+			opacity: 0.65;
+		}
+
+		8% {
+			opacity: 0.2;
+		}
+
+		10% {
+			opacity: 0.9;
+		}
+
+		11% {
+			opacity: 0.922;
+		}
+
+		12% {
+			opacity: 0.77;
+		}
+
+		14% {
+			opacity: 0.75;
+		}
+
+		16% {
+			opacity: 0.5;
+		}
+
+		17% {
+			opacity: 0.98;
+		}
+
+		19% {
+			opacity: 0.93;
+		}
+
+		20% {
+			opacity: 0.99;
+		}
+
+		24% {
+			opacity: 1;
+		}
+
+		26% {
+			opacity: 0.94;
+		}
+
+		28% {
+			opacity: 0.98;
+		}
+
+		37% {
+			opacity: 0.93;
+		}
+
+		38% {
+			opacity: 0.5;
+		}
+
+		39% {
+			opacity: 0.96;
+		}
+
+		42% {
+			opacity: 1;
+		}
+
+		44% {
+			opacity: 0.97;
+		}
+
+		46% {
+			opacity: 0.94;
+		}
+
+		56% {
+			opacity: 0.9;
+		}
+
+		58% {
+			opacity: 0.9;
+		}
+
+		60% {
+			opacity: 0.99;
+		}
+
+		68% {
+			opacity: 1;
+		}
+
+		70% {
+			opacity: 0.9;
+		}
+
+		72% {
+			opacity: 0.95;
+		}
+
+		93% {
+			opacity: 0.93;
+		}
+
+		95% {
+			opacity: 0.95;
+		}
+
+		97% {
+			opacity: 0.93;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
 
 `;
 
@@ -278,7 +409,7 @@ const ProjectRow = styled.div`
         justify-content: space-between;
         margin: 10px;
 
-        
+	}
         
 
 `;
@@ -442,6 +573,8 @@ line-height: 1.0rem;
 
 
 
+
+
 function Home() {
     
 	return (
@@ -463,7 +596,7 @@ function Home() {
 					<Fade>
 						<img src='Logo_White_Transparent.png'/>
 					</Fade>
-					<h1>We Are Exeter Entrepreneurs</h1>
+					<h1 className="flickerText">We Are Exeter Entrepreneurs</h1>
 				</SectionTitle>
 
 				<SectionText>
@@ -475,7 +608,7 @@ function Home() {
 
 			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
-					<h1>Our Community Projects</h1>
+					<h1 className="flickerText">Our Community Projects</h1>
 				</SectionTitle>
 
 				<SectionText>
