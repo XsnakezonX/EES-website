@@ -6,31 +6,31 @@ background-color: #002433;
 border-top-style: solid;
 border-width: 1px;
 border-color: white;
-height: 15vh;
+height: auto;
 display: flex !important;
 flex-direction: row;
 align-items: center;
 justify-content: center;
 
-@media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 1150px) {
     display: flex;
     flex-direction: column;
-    justify-content: center
-    margin: 10px;
-}
+    justify-content: center;
+     
+} */
 
 
     @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
-        justify-content: center
-        margin: 10px;
+        justify-content: center;
+        
     
     
   }
 
   @media screen and (max-height: 750px) {
-    height: 100%;
+    height: auto;
     
 }
 
@@ -39,18 +39,36 @@ justify-content: center;
 const IconsContainer = styled.div`
 background-color: #002433;
 width: 30vw;
-height: 10vh;
+height: auto;
 display: flex !important;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
 
+.IddleIcon {
+        width: 2vw; 
+    }
+
+@media screen and (max-width: 1150px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+        height: auto;
+
+    .IddleIcon {
+        width: 2.5vw; 
+    }
+    
+  }
+
 @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: row;
-        justify-content: center
+        justify-content: center;
         margin: 10px;
-    
+        height: auto;
+
     .IddleIcon {
         width: 5vw; 
     }
@@ -61,13 +79,24 @@ justify-content: space-between;
 
 const FooterHeadline = styled.div`
 color: white;
-font-size: 2.98vw;
+font-size: 1.5vw;
 margin-bottom: 5px;
 margin-right: 5vw;
 
 p{
     margin: 0;
 }
+
+@media screen and (max-width: 1150px) {
+    color: white;
+    font-size: 2vw;
+    margin-bottom: 5px;
+    margin-right: 5vw;
+
+    p{
+        margin: 0;
+    }
+    }
 
 @media screen and (max-width: 768px) {
     color: white;
