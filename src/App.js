@@ -7,7 +7,7 @@ import Blog from "./Components/Blog";
 import Navbar from "./Components/Nav/Navbar";
 
 import Landing from "./Components/Landing";
-import Footer from "./Components/Nav/Footer";
+
 
 function App() {
 	return (
@@ -16,13 +16,13 @@ function App() {
 			
 
 			<Routes>
-				<Route exact path="/landing" element={<Landing />} />
-				<Route exact path="/" element={<Home />} />
+				<Route exact path="/" element={<Landing />} />
+				<Route exact path="/home" element={<Home />} />
 				<Route exact path="/blog" element={<Blog />} />
 				
 			</Routes>
 
-			<Footer />
+			
 		</>
 	);
 }

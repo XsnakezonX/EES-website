@@ -190,7 +190,7 @@ function Landing() {
 			setFlickerClass("flicker-text");
 			setSwitchValue(true);
 			setTimeout(() => {
-				navigate("/");
+				navigate("/home");
 			}, 4000);
 		} else {
 			setSwitchImage("/Switch ON.svg");

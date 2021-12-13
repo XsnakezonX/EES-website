@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import styled from "styled-components";
 import Navbar from "./Nav/Navbar";
-
+import Footer from "./Nav/Footer"
 import Projects from "./Projects";
 import Fade from 'react-reveal/Fade';
 import { fadeOutEnabled } from "react-reveal/globals";
@@ -841,7 +841,7 @@ ${'' /*
                 
 
                 </MapContainer>
-
+				<Footer />
 			
 		</>
 	);
