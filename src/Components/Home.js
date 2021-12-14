@@ -73,6 +73,7 @@ button:hover {
 const MapContainer = styled.section`
 	background-image: url(/forum.png);
 	height: 80vh;
+	width: 100%;
 	background-size: cover;
 	display: flex !important;
 	flex-direction: column;
@@ -561,9 +562,14 @@ const Left = styled.div`
 const MapTitle = styled.div`
 color: white;
 margin-top: -40px;
-font-size: 1.0rem;
+font-size: 1.5rem;
 line-height: 1.0rem;
+margin-right: 37.5vw;
 
+
+@media screen and (max-width: 1130px) {
+	margin-right: 0;
+  }
 
 `;
 
@@ -593,9 +599,6 @@ function Home() {
 
 			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
-					<Fade>
-						<img src='Logo_White_Transparent.png'/>
-					</Fade>
 					<h1 className="flickerText">We Are Exeter Entrepreneurs</h1>
 				</SectionTitle>
 

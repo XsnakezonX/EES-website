@@ -129,9 +129,18 @@ body {
   src: url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
 }
 
-.MapDimensions{
-	width: 900px;
+/* .MapDimensions{
+	width: 540px;
 	height: 300px;
+
+
+} */
+
+.MapDimensions{
+	width: 50vw;
+	height: 28vw;
+	margin-left: 20vw;
+	
 
 
 }
@@ -141,10 +150,12 @@ body {
 	
 	width:62vw;
 	height: 34vw;
+	margin-left: 0;
 	
 		
 	}
   }
+
 
 /*  Responsive design screen breakpoints x axis */
 /*
