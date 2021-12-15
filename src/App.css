@@ -139,7 +139,7 @@ body {
 .MapDimensions{
 	width: 50vw;
 	height: 28vw;
-	margin-left: 20vw;
+	margin-left: 8vw;
 	
 
 
@@ -151,7 +151,7 @@ body {
 	width:62vw;
 	height: 34vw;
 	margin-left: 0;
-	
+	padding-top: 0;
 		
 	}
   }

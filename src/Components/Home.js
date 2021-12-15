@@ -31,6 +31,18 @@ justify-content: center;
 
 `;
 
+const OffSetContainer = styled.section`
+background-color: #002433;
+height: 25vh;
+background-size: cover;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+`;
+
 const CallToActionContainer = styled.section`
 	background-color: #002433;
 	height: 100vh;
@@ -79,6 +91,46 @@ const MapContainer = styled.section`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
+	
+
+	iframe{
+		position: absolute;
+		margin-top: 250px;
+	}
+
+	@media screen and (max-width: 1130px) {
+
+
+		iframe{
+		position: static;
+		margin-top: 0;
+		
+	}
+  }
+
+  @media screen and (max-height: 400px) {
+
+
+		iframe{
+		position: absolute;
+		margin-top: 225px;
+
+		}
+	}
+	
+	@media screen and (max-height: 400px) {
+
+
+		iframe{
+		position: absolute;
+		margin-top: 200px;
+
+		}
+		}
+
+
+
 	@media screen and (max-height: 750px) {
 		background-image: url(/forum.png);
 		height: 900px;
@@ -561,7 +613,7 @@ const Left = styled.div`
 
 const MapTitle = styled.div`
 color: white;
-margin-top: -40px;
+margin-top: -450px;
 font-size: 1.5rem;
 line-height: 1.0rem;
 margin-right: 37.5vw;
@@ -569,6 +621,7 @@ margin-right: 37.5vw;
 
 @media screen and (max-width: 1130px) {
 	margin-right: 0;
+	margin-top: -40px;
   }
 
 `;
@@ -833,7 +886,7 @@ ${'' /*
 
                 <MapContainer className="container-fluid">
 
-                <MapTitle>
+                <MapTitle className="MapTextPadding">
                     <h1>Location</h1>
                     <p>We are based at the heart of campus</p>
                 </MapTitle>
@@ -844,6 +897,8 @@ ${'' /*
                 
 
                 </MapContainer>
+				<OffSetContainer>
+				</OffSetContainer>
 				<Footer />
 			
 		</>
