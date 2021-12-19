@@ -56,7 +56,7 @@ video {
 	video {
 	width:98vw;
 	object-fit: fill;
-	margin-top: -6%;
+	
 	position: relative;
 	padding-bottom: 2%;
 		
@@ -64,14 +64,14 @@ video {
   }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1250px) {
 	video {
 		
 		width: 98vw;
 		object-fit: contain;
-		top: 0;
+		/* top: 0;
 		left: 0;
-		position: absolute;
+		position: absolute; */
 		padding-bottom: 2%;
 	
 		
@@ -83,9 +83,9 @@ video {
 		
 		width: 96vw;
 		object-fit: contain;
-		top: 0;
+		/* top: 0;
 		left: 0;
-		position: absolute;
+		position: absolute; */
 		padding-bottom: 2%;
 	
 		
@@ -97,9 +97,9 @@ video {
 		
 		width: 98vw;
 		object-fit: contain;
-		top: 0;
+		/* top: 0;
 		left: 0;
-		position: absolute;
+		position: absolute; */
 		padding-bottom: 2%;
 	
 		
@@ -111,9 +111,9 @@ video {
 		
 		width: 96vw;
 		object-fit: contain;
-		top: 0;
+		/* top: 0;
 		left: 0;
-		position: absolute;
+		position: absolute; */
 		padding-bottom: 2%;
 	
 		

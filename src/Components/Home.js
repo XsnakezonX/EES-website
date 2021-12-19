@@ -25,11 +25,43 @@ height: 95vh;
 background-size: cover;
 display: flex !important;
 flex-direction: column;
-align-items: center;
-justify-content: center;
+align-items: flex-start;
+justify-content: flex-start;
+
+@media screen and (max-width: 1300px) {
+align-items: flex-start;
+justify-content: flex-start;
+min-height: 40vw;
+height: auto;
+}
+
+@media screen and (max-width: 1130px) {
+align-items: flex-start;
+justify-content: flex-start;
+
+height: auto;
+}
 
 
-`;
+@media screen and (max-width: 750px) {
+
+	
+	height: auto;
+	}
+
+@media screen and (max-width: 600px) {
+
+
+height: auto;
+}
+
+@media screen and (max-width: 490px) {
+
+
+height: auto;
+}
+	
+	`;
 
 const OffSetContainer = styled.section`
 background-color: #002433;
@@ -39,6 +71,37 @@ display: flex !important;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
+@media screen and (max-width: 1300px) {
+
+height: 15vh;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+height: 13vh;
+
+}
+
+@media screen and (max-width: 850px) {
+
+height: 10vh;
+
+}
+
+@media screen and (max-width: 750px) {
+
+height: 7vh;
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+	height: 3vh;
+
+}
 
 
 `;
@@ -127,7 +190,7 @@ const MapContainer = styled.section`
 		margin-top: 200px;
 
 		}
-		}
+	}
 
 
 
@@ -348,6 +411,14 @@ margin-bottom: 1vw;
 p{
 	margin-bottom: 0;
 }
+
+@media screen and (max-width: 1300px) {
+	font-size: 4.8vw;
+	line-height: 2vw;
+      }
+
+	 
+
 `;
 
 const ProjectText = styled.p`
@@ -360,6 +431,14 @@ line-height: 1.8rem;
 p{
 	margin: 0;
 }
+@media screen and (max-width: 1300px) {
+	line-height: 3rem;
+	font-size: 3vw;
+      }
+
+	
+
+
 `;
 
 const SponsorIcons = styled.div`
@@ -391,12 +470,12 @@ const SponsorsRow = styled.div`
             margin:10px;
         }
         
-        img {
-            
-            width: 20vw;
-            
-            
-        }
+			img {
+				
+				width: 20vw;
+				
+				
+			}
       }
 
     @media screen and (max-width: 1150px) {
@@ -434,8 +513,10 @@ const SponsorsRow = styled.div`
 
 		.LogoSpacing {
 			margin: 10px;
-			width: 20vw;
+			width: 50vw;
 		}
+
+		
 	}
 
 	@media screen and (max-width: 575px) {
@@ -445,8 +526,8 @@ const SponsorsRow = styled.div`
 		margin: 10px;
 
 		.LogoSpacing {
-			margin: 10px;
-			width: 24vw;
+			margin: 5vw;
+			width: 60vw;
 		}
 	}
 `;
@@ -478,7 +559,7 @@ const ProjectCard = styled.div`
     @media screen and (max-width: 1300px) {
 		justify-content: center;
 		align-content: center;
-		
+		width: 500px;
         img {
             
             width: 40vw;
@@ -487,14 +568,31 @@ const ProjectCard = styled.div`
         }
       }
 
-	  @media screen and (max-width: 1200px) {
+	  @media screen and (max-width: 1230px) {
+		width: 75vw;
+
+
 		img {
             
-            width: 70vw;
+            width: 75vw;
             
             
         }
-		width: 70vw;
+		
+      }
+
+	  @media screen and (max-width: 1210px) {
+		width: 80vw;
+		margin-left: 0;
+		margin-right: 0;
+
+		img {
+            
+            width: 80vw;
+            
+            
+        }
+		
       }
 
 `;
@@ -692,7 +790,7 @@ function Home() {
 					</p>
 				</SectionText>
 
-				<div className='container-fluid'>
+				
 				<ProjectRow className="row">
 					<ProjectCard>
 						<a href="http://maxbeech.com/exeterentrepreneurs/excode-content/" target="_blank">
@@ -724,8 +822,8 @@ function Home() {
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
-				</div>
-
+				
+				
 				<ProjectRow className="row">
 					<ProjectCard>
 						<a href="https://stayhappening.com/e/start-up-caf%C3%A9-%E2%98%95-E3LUSQ5J5ORH" target="_blank">
