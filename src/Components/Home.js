@@ -476,12 +476,25 @@ const ProjectCard = styled.div`
 	width: 523px;
 
     @media screen and (max-width: 1300px) {
+		justify-content: center;
+		align-content: center;
+		
         img {
             
             width: 40vw;
             
             
         }
+      }
+
+	  @media screen and (max-width: 1200px) {
+		img {
+            
+            width: 70vw;
+            
+            
+        }
+		width: 70vw;
       }
 
 `;
@@ -659,7 +672,9 @@ function Home() {
 					<p>Join the largest society on campus now, free.</p>
 				</SectionText>
 
-				<Button>Join our community</Button>
+				<a href="https://www.exeterguild.org/societies/exeterentrepreneurs/" target="_blank">
+					<Button>Join our community</Button>
+				</a>
 			</ProjectsContainer>
 
 			<ProjectsContainer className="container-fluid">
@@ -680,10 +695,12 @@ function Home() {
 				<div className='container-fluid'>
 				<ProjectRow className="row">
 					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
+						<a href="http://maxbeech.com/exeterentrepreneurs/excode-content/" target="_blank">
+							<img
+								src="/ExcodeProject.jpg"
+								alt="Project Thumbnail"
+							/>
+						</a>
 						<ProjectTitle>
 							<p>ExCode</p>
 						</ProjectTitle>
@@ -693,10 +710,12 @@ function Home() {
 					</ProjectCard>
 
 					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
+						<a href="https://junctionxexeter.com" target="_blank">
+							<img
+								src="/ProjectPlaceHolder.svg"
+								alt="Project Thumbnail"
+							/>
+						</a>
 						<ProjectTitle>
 							<p>JunctionX</p>
 						</ProjectTitle>
@@ -709,10 +728,12 @@ function Home() {
 
 				<ProjectRow className="row">
 					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
+						<a href="https://stayhappening.com/e/start-up-caf%C3%A9-%E2%98%95-E3LUSQ5J5ORH" target="_blank">
+							<img
+								src="/startupcafeImage.png"
+								alt="Project Thumbnail"
+							/>
+						</a>
 						<ProjectTitle>
 							<p>StartUp Café</p>
 						</ProjectTitle>
@@ -722,10 +743,12 @@ function Home() {
 					</ProjectCard>
 
 					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
+						<a href="https://thegrapevine.substack.com/" target="_blank">
+							<img
+								src="/GrapevineProject.png"
+								alt="Project Thumbnail"
+							/>
+						</a>
 						<ProjectTitle>
 							<p>The Grapevine</p>
 						</ProjectTitle>
@@ -736,10 +759,12 @@ function Home() {
 				</ProjectRow>
 				<ProjectRow className="row">
 					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
+						<a href="https://thegrapevine.substack.com/" target="_blank">
+							<img
+								src="/ProjectPlaceHolder.svg"
+								alt="Project Thumbnail"
+							/>
+						</a>
 						<ProjectTitle>
 							<p>Project</p>
 						</ProjectTitle>
@@ -749,10 +774,12 @@ function Home() {
 					</ProjectCard>
 
 					<ProjectCard>
-						<img
-							src="/ProjectPlaceHolder.svg"
-							alt="Project Thumbnail"
-						/>
+						<a href="https://thegrapevine.substack.com/" target="_blank">
+							<img
+								src="/ProjectPlaceHolder.svg"
+								alt="Project Thumbnail"
+							/>
+						</a>
 						<ProjectTitle>
 							<p>Project</p>
 						</ProjectTitle>
