@@ -436,7 +436,21 @@ p{
 	font-size: 3vw;
       }
 
-	
+	  @media screen and (max-width: 800px) {
+		line-height: 2.5rem;
+		font-size: 3vw;
+  }
+
+	  @media screen and (max-width: 600px) {
+		line-height: 2rem;
+		font-size: 3vw;
+  }
+
+
+	  @media screen and (max-width: 405px) {
+		line-height: 1.3rem;
+		font-size: 3vw;
+  }
 
 
 `;
@@ -734,6 +748,19 @@ margin-right: 37.5vw;
 	margin-right: 0;
 	margin-top: -40px;
   }
+
+  @media screen and (max-width: 405px) {
+	font-size: 1.2rem;
+	line-height: 1.0rem;
+	text-align: center;
+  }
+
+  @media screen and (max-width: 350px) {
+	font-size: 1.2rem;
+	line-height: 1.0rem;
+	margin-right: 0;
+  }
+
 
 `;
 

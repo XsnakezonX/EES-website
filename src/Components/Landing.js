@@ -18,6 +18,18 @@ const NeonContainer = styled.div`
 	align-items: center;
 	justify-content: space-between;
 
+	@media screen and (max-width: 768px) {
+        display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+   
+        
+    
+    
+  	}
+
 	.switch-image {
 		width: 155px;
 		height: 405px;
@@ -27,6 +39,15 @@ const NeonContainer = styled.div`
 		width: 12vw;
 		height: 43vh;
 		opacity: 0.05;
+
+		
+		@media screen and (max-width: 768px) {
+        display: none;
+   
+        
+    
+    
+  }
 	}
 
 	h1 {
@@ -34,9 +55,34 @@ const NeonContainer = styled.div`
 		font-size: 4.7vw;
 		opacity: 0.05;
 		text-shadow: 0 0 20px #fff;
+
+		@media screen and (max-width: 1000px) {
+        font-size: 5vw;
+		}
+
+		@media screen and (max-width: 700px) {
+        font-size: 6vw;
+
+		}
+
+		@media screen and (max-width: 600px) {
+        font-size: 7vw;
+
+		}
+		@media screen and (max-width: 500px) {
+        font-size: 7.5vw;
+		}
+        
+    
+    
+  
 	}
 
 	.flicker-text {
+  		animation: flicker 1s 0.3s infinite;
+	}
+
+	.flicker-image {
   		animation: flicker 1s 0.3s infinite;
 	}
 
@@ -168,6 +214,10 @@ const NeonContainer = styled.div`
 `;
 
 const LettersBox = styled.div`
+	display: flex !important;
+	flex-direction: column;
+	align-items: flex-start;
+
 	width: 45vw;
 	height: 24vh;
 	margin-left: 10vh;
@@ -181,6 +231,7 @@ function Landing() {
 	const [switchImage, setSwitchImage] = useState("/Switch ON.svg");
 	const [switchValue, setSwitchValue] = useState(false);
 	const [flickerClass, setFlickerClass] = useState("");
+	const [flickerImageClass, setFlickerImageClass] = useState("");
 
 	let navigate = useNavigate();
 
@@ -188,6 +239,7 @@ function Landing() {
 		if(switchValue === false){
 			setSwitchImage("/Switch OFF.svg");
 			setFlickerClass("flicker-text");
+			setFlickerImageClass("flicker-text");
 			setSwitchValue(true);
 			setTimeout(() => {
 				navigate("/home");
@@ -195,6 +247,7 @@ function Landing() {
 		} else {
 			setSwitchImage("/Switch ON.svg");
 			setFlickerClass("");
+			setFlickerImageClass("");
 			setSwitchValue(false);
 		}
 	};
@@ -203,7 +256,7 @@ function Landing() {
 	return (
 		<LandingPage>
 			<NeonContainer>
-				<img className={`logo-image ${flickerClass}`} src="/logo-with-shadow.svg"/>
+				<img className={`logo-image ${flickerImageClass}`} src="/logo-with-shadow.svg"/>
 				<LettersBox>
 					<h1 className={flickerClass}>Totally Free.</h1>
 					<h1 className={flickerClass}>Always Innovating.</h1>
