@@ -886,12 +886,12 @@ function Home() {
 					<ProjectCard>
 						<a href="https://thegrapevine.substack.com/" target="_blank">
 							<img
-								src="/ProjectPlaceHolder.svg"
+								src="/BlockChainProjectCard.png"
 								alt="Project Thumbnail"
 							/>
 						</a>
 						<ProjectTitle>
-							<p>Project</p>
+							<p>BlockChain</p>
 						</ProjectTitle>
 						<ProjectText>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
@@ -901,12 +901,12 @@ function Home() {
 					<ProjectCard>
 						<a href="https://thegrapevine.substack.com/" target="_blank">
 							<img
-								src="/ProjectPlaceHolder.svg"
+								src="/MentorshipProjectCard.png"
 								alt="Project Thumbnail"
 							/>
 						</a>
 						<ProjectTitle>
-							<p>Project</p>
+							<p>Mentorship</p>
 						</ProjectTitle>
 						<ProjectText>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
