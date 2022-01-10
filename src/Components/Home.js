@@ -845,7 +845,8 @@ function Home() {
 							<p>JunctionX</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Junction is a global hackathon and tech community, spreading the word of empowering people to create with technology. </p>
+							<p>Junction is a global hackathon and tech community, spreading the word of empowering people to create with technology. Junction’s first and only event in the UK was brought to Exeter by our
+							very own community!</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
