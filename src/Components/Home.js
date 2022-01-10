@@ -820,7 +820,7 @@ function Home() {
 				
 				<ProjectRow className="row">
 					<ProjectCard>
-						<a href="http://maxbeech.com/exeterentrepreneurs/excode-content/" target="_blank">
+						<a href="https://www.excode.co.uk/" target="_blank">
 							<img
 								src="/ExcodeProject.jpg"
 								alt="Project Thumbnail"
@@ -830,7 +830,7 @@ function Home() {
 							<p>ExCode</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
+							<p>The leading student-run coding bootcamp in the UK, with the mission to be able to give any university student access to the resources and teaching needed to be able to learn fundamental programming skills.</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -845,7 +845,7 @@ function Home() {
 							<p>JunctionX</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
+							<p>Junction is a global hackathon and tech community, spreading the word of empowering people to create with technology. </p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
@@ -863,7 +863,8 @@ function Home() {
 							<p>StartUp Café</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
+							<p>Founded by our current President Peter Coulson, the Startup-Cafe is a meeting place and hub for student-run entrepreneurial movement  A place to meet like-minded minds
+								and connect with Exeter’s most innovative thinkers.</p>
 						</ProjectText>
 					</ProjectCard>
 
@@ -878,38 +879,39 @@ function Home() {
 							<p>The Grapevine</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Nick & Louis' our former President & Vice-President’s take on the most interesting tech stories of the week with the Grapevine! Helping you discover the hottest startups and the latest technology trends, all in one simple email, once a week. 10,000+ subscribers and counting!</p>
+							<p>Nick Daley & Louis Sutton our former President & Vice-President’s take on the most interesting tech stories of the week with the Grapevine! Helping you discover the hottest startups and the latest technology trends, all in one simple email, once a week.</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>
 				<ProjectRow className="row">
 					<ProjectCard>
-						<a href="https://thegrapevine.substack.com/" target="_blank">
+						{/* <a href="https://thegrapevine.substack.com/" target="_blank"> */}
 							<img
 								src="/BlockChainProjectCard.png"
 								alt="Project Thumbnail"
 							/>
-						</a>
+						{/* </a> */}
 						<ProjectTitle>
 							<p>BlockChain</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
+							<p>A new successful series of speaker panels and workshops about blockchain, cryptocurrency investments and web 3.0. Join us and learn about the power of this emerging technology and 
+							potentially revolutionary tool.</p>
 						</ProjectText>
 					</ProjectCard>
 
 					<ProjectCard>
-						<a href="https://thegrapevine.substack.com/" target="_blank">
+						{/* <a href="https://thegrapevine.substack.com/" target="_blank"> */}
 							<img
 								src="/MentorshipProjectCard.png"
 								alt="Project Thumbnail"
 							/>
-						</a>
+						{/* </a> */}
 						<ProjectTitle>
 							<p>Mentorship</p>
 						</ProjectTitle>
 						<ProjectText>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec enim diam. Tellus orci ac auctor augue mauris augue neque gravida in. Est ullamcorper eget nulla facilisi etiam.</p>
+							<p>Participants in the Mentorship Series build their ideas alongside mentors that have built, led or invested in high-growth businesses and are willing to spare some of their time to help a group of ambitious students.</p>
 						</ProjectText>
 					</ProjectCard>
 				</ProjectRow>

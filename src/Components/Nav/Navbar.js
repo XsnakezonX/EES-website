@@ -67,11 +67,11 @@ function Navbar() {
                             <img src="Mobile-Logo@2x.svg" alt="Mobile Logo" style={{width: '60px', marginLeft: '3.5vw', marginTop: '1.4vw', borderRadius: '40px', backdropFilter: 'blur(8px)'}} />
                         </NavLink>
                     </NavLogo>
-                    <BlogButton>
+                    {/* <BlogButton>
                         <NavLink to="/blog">
                             <h1>Blog</h1>
                         </NavLink>
-                    </BlogButton>
+                    </BlogButton> */}
 
                 </LogoDiv>
 
