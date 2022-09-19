@@ -958,7 +958,7 @@ ${'' /*
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">
-					<h1 className="flickerText">Our Previous Sponsors</h1>
+					<h1 className="flickerText">Our Previous Sponsors </h1>
 				</SectionTitle>
 
 				<SectionText className="row">
