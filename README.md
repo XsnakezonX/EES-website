@@ -19,7 +19,7 @@ A live version of this repository can be found in the following link:
 
 # Technologies
 
-React | React-Router-Dom-V6 | JavaScript | HTML | CSS | SASS | Netlify | Styled Components | Bootstrap | Snazzy Maps | Google Maps API
+React | React-Router-Dom-V6 | JavaScript | HTML | CSS | SASS | firebase | Styled Components | Bootstrap | Snazzy Maps | Google Maps API
 
 
 # Contacts
