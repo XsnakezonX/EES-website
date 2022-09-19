@@ -804,7 +804,7 @@ function Home() {
 
 			<ProjectsContainer className="container-fluid">
 				<SectionTitle>
-					<h1 className="flickerText">Our Community Projects</h1>
+					<h1 className="flickerText">Our Past Community Projects</h1>
 				</SectionTitle>
 
 				<SectionText>
@@ -958,7 +958,7 @@ ${'' /*
 
 			<SponsorContainer className="container-fluid">
 				<SectionTitle className="row">
-					<h1 className="flickerText">Meet our Sponsors</h1>
+					<h1 className="flickerText">Our Previous Sponsors</h1>
 				</SectionTitle>
 
 				<SectionText className="row">
