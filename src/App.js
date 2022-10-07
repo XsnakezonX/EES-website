@@ -6,7 +6,7 @@ import Blog from "./Components/Blog";
 
 import Navbar from "./Components/Nav/Navbar";
 
-import Landing from "./Components/Landing";
+// import Landing from "./Components/Landing";
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
 			
 
 			<Routes>
-				<Route exact path="/" element={<Landing />} />
+				{/* <Route exact path="/" element={<Landing />} /> */}
+				<Route exact path="/" element={<Home />} />
 				<Route exact path="/home" element={<Home />} />
 				<Route exact path="/blog" element={<Blog />} />
 				
