@@ -12,7 +12,7 @@ import Navbar from "./Components/Nav/Navbar";
 function App() {
 	return (
 		<>
-			{/* <Navbar /> */}
+			{<Navbar />}
 			
 
 			<Routes>

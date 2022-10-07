@@ -797,7 +797,7 @@ function Home() {
 					<p>Join the largest society on campus now, free.</p>
 				</SectionText>
 
-				<a href="https://www.exeterguild.org/societies/exeterentrepreneurs/" target="_blank">
+				<a href="https://my.exeterguild.com/groups/FR342/entrepreneurs-society" target="_blank">
 					<Button>Join our community</Button>
 				</a>
 			</ProjectsContainer>
