@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import React, { Component } from 'react';
 import { Routes, Route } from "react-router";
 import Home from "./Components/Home";
 import Blog from "./Components/Blog";
@@ -12,14 +13,15 @@ import Navbar from "./Components/Nav/Navbar";
 function App() {
 	return (
 		<>
-			{<Navbar />}
+			{/*<Navbar />*/}
 			
 
 			<Routes>
-				{/* <Route exact path="/" element={<Landing />} /> */}
+				
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/home" element={<Home />} />
 				<Route exact path="/blog" element={<Blog />} />
+				{/* <Route exact path="/landing" element={<Landing />} /> */}
 				
 			</Routes>
 
